@@ -10,6 +10,14 @@ const theme = {
     quaternary: '#0F398C',
     navHighlight: '#A3A3A3',
     nav: '#CACACA'
+  },
+  sizes: {
+    xsmall: '1,5rem',
+    small: '2rem',
+    normal: '3rem',
+    large: '4.5rem',
+    xlarge: '6rem',
+    xxlarge: '7.5rem'
   }
 };
 
