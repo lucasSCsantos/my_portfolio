@@ -8,7 +8,6 @@ interface IconLinkProps {
 }
 
 function IconLink({ path = '/', children }: IconLinkProps) {
-  // Resolver erro forwardRef neste componente
   return (
     <IconLinkContainer>
       <Link href={path}>{children}</Link>

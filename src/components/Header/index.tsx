@@ -8,7 +8,6 @@ import { Container } from './styles';
 function Header() {
   const GIT_HUB = 'https://github.com/lucasSCsantos';
   const LINKEDIN = 'https://www.linkedin.com/in/lucas-sc-santos/';
-
   return (
     <Container>
       <Area backgroundColor="transparent" width={45} height="100%">
