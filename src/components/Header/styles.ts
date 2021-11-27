@@ -28,11 +28,16 @@ export const Container = styled.header`
   }
 
   @media (max-width: 1440px) {
-    .navLinks {
-      margin: 0 1rem;
+    & > div:first-child {
+      width: 80%;
+    }
+    & > div:nth-child(2) {
+      width: 20%;
     }
   }
   @media (max-width: 1024px) {
+  }
+  @media (max-width: 834px) {
     & > div:first-child {
       width: 100%;
     }
@@ -40,10 +45,10 @@ export const Container = styled.header`
       display: none;
     }
   }
-  @media (max-width: 700px) {
-  }
-  @media (max-width: 460px) {
-    display: none;
+  @media (max-width: 428px) {
+    .navLinks > div:first-child {
+      display: none;
+    }
   }
 `;
 
