@@ -27,6 +27,10 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
+  ul {
+    list-style: none;
+  }
+
   .container {
     width: 100%;
     margin: 0 auto;

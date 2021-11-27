@@ -9,7 +9,8 @@ const theme = {
     tertiary: '#1462A6',
     quaternary: '#0F398C',
     navHighlight: '#A3A3A3',
-    nav: '#CACACA'
+    nav: '#CACACA',
+    transparent: '#00000000'
   },
   sizes: {
     xsmall: '1,5rem',

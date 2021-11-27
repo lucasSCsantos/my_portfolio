@@ -16,6 +16,12 @@ export type TextProps = {
   lineHeight?: string | number;
 };
 
+export type AreaProps = {
+  backgroundColor?: keyof typeof theme.colors;
+  width?: number;
+  height?: number | string;
+};
+
 export const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
   as: `h${level}`
 }))<HeadingProps>`
@@ -38,5 +44,13 @@ export const Text = styled('p')<TextProps>`
     color: ${theme.colors[color]};
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
+  `}
+`;
+
+export const Area = styled('div')<AreaProps>`
+  ${({ backgroundColor = 'background', width, height }) => css`
+    background-color: ${theme.colors[backgroundColor]};
+    width: ${width}%;
+    height: ${typeof height === 'number' ? `${height}rem` : height};
   `}
 `;
