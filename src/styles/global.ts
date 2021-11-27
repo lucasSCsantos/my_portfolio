@@ -39,11 +39,13 @@ export default createGlobalStyle`
     @media(max-width:1440px) {
       max-width: 70rem;
     }
-    @media(max-width:1000px) {
+    @media(max-width:1024px) {
       max-width: 50rem;
     }
     @media(max-width:700px) {
       padding: 0 2rem;
+    }
+    @media (max-width: 460px) {
     }
   }
 `;
