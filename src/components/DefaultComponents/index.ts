@@ -52,5 +52,6 @@ export const Area = styled('div')<AreaProps>`
     background-color: ${theme.colors[backgroundColor]};
     width: ${width}%;
     height: ${typeof height === 'number' ? `${height}rem` : height};
+    position: relative;
   `}
 `;
