@@ -8,7 +8,7 @@ export type AreaProps = {
 export const Container = styled.header`
   width: 100%;
   height: 7.5rem;
-  background-color: red;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,15 +20,6 @@ export const Container = styled.header`
     height: 100%;
     width: 100%;
   }
-
-  #teco {
-    margin-top: 1900px;
-    height: 50px;
-    width: 50px;
-    background-color: blue;
-  }
 `;
 
-export const NavLinkContainer = styled.div`
-  background-color: tomato;
-`;
+export const NavLinkContainer = styled.div``;

@@ -37,7 +37,7 @@ export const Text = styled('p')<TextProps>`
   ${({
     color = 'text',
     size = 'xsmall',
-    fontWeight = 700,
+    fontWeight = 600,
     lineHeight = 1.5
   }) => css`
     font-size: ${theme.sizes[size]};
