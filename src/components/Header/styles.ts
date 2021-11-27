@@ -9,23 +9,34 @@ export const Container = styled.header`
 
   .navLinks {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
     width: 100%;
+    align-self: center;
+    margin: 0 2rem;
   }
 
   .iconLinks {
     display: flex;
-    position: absolute;
-    height: 100%;
+    align-self: center;
     align-items: center;
-    justify-content: space-between;
+    position: absolute;
     right: 2rem;
+    justify-content: space-between;
     font-size: ${({ theme }) => theme.sizes.normal};
-    width: 12%;
-    background-color: red;
+    width: 7.5rem;
   }
+
+  /* @media (max-width: 1440px) {
+  }
+  @media (max-width: 1000px) {
+    .iconLinks {
+      display: none;
+    }
+  } */
+  /* @media (max-width: 700px) {
+    padding: 0 2rem;
+  } */
 `;
 
 export const NavLinkContainer = styled.div`

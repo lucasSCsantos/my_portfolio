@@ -53,5 +53,6 @@ export const Area = styled('div')<AreaProps>`
     width: ${width}%;
     height: ${typeof height === 'number' ? `${height}rem` : height};
     position: relative;
+    display: flex;
   `}
 `;
