@@ -5,6 +5,30 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+
+  & > div:first-child {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .heroTitle {
+    /* background-color: red; */
+    margin-right: 0.75rem;
+    margin-bottom: 15rem;
+    position: relative;
+  }
+
+  .titleCover {
+    position: absolute;
+    background-color: transparent;
+    border: 6px solid black;
+    border-right: none;
+    top: 110px;
+    left: -10px;
+    width: 665px;
+    height: 100px;
+  }
 `;
 
 export const WavesContainer = styled.svg`
@@ -18,32 +42,29 @@ export const WavesContainer = styled.svg`
   left: 0;
 
   .backWave {
-    transform: translateY(-1rem);
     animation: moveBackWave 6s ease-in-out infinite alternate;
   }
 
   .midWave {
-    transform: translateY(4rem);
     animation: moveMidWave 6s ease-in-out infinite alternate;
   }
 
   .frontWave {
-    transform: translateY(7rem);
     animation: moveFrontWave 6s ease-in-out infinite alternate;
   }
 
   @keyframes moveBackWave {
     from {
-      transform: translate(-33.5rem, -3rem);
+      transform: translate(-37.5rem, -2rem);
     }
     to {
-      transform: translate(0, -3rem);
+      transform: translate(0, -2rem);
     }
   }
 
   @keyframes moveMidWave {
     from {
-      transform: translate(-31.25rem, 1rem);
+      transform: translate(-25rem, 1rem);
     }
     to {
       transform: translate(0, 1rem);
@@ -52,7 +73,7 @@ export const WavesContainer = styled.svg`
 
   @keyframes moveFrontWave {
     from {
-      transform: translate(-25rem, 1rem);
+      transform: translate(-18.75rem, 1rem);
     }
     to {
       transform: translate(0, 1rem);

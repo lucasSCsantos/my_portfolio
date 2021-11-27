@@ -32,6 +32,18 @@ export const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
     color: ${colors[color]};
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
+    @media (max-width: 1440px) {
+      font-size: calc(${sizes[size]} - 2rem);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(${sizes[size]} - 2.5rem);
+    }
+    @media (max-width: 834px) {
+      font-size: calc(${sizes[size]} - 3rem);
+    }
+    @media (max-width: 428px) {
+      font-size: calc(${sizes[size]} - 3.5rem);
+    }
   `}
 `;
 
