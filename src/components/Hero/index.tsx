@@ -17,6 +17,14 @@ function Hero() {
         </div>
       </Area>
       <Area backgroundColor="quaternary" width={55} height="100%">
+        <div className="heroSubtitle">
+          <div className="subtitleCover" />
+          <Heading level={1} size="large" color="textLight">
+            ESSE É O MEU
+            <br />
+            PORTFÓLIO
+          </Heading>
+        </div>
         <Waves />
       </Area>
     </Container>

@@ -12,21 +12,44 @@ export const Container = styled.div`
     flex-direction: column;
   }
 
+  & > div:nth-child(2) {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .heroTitle {
-    /* background-color: red; */
     margin-right: 0.75rem;
     margin-bottom: 15rem;
     position: relative;
   }
 
+  .heroSubtitle {
+    margin-left: 0.65rem;
+    margin-top: 8rem;
+    position: relative;
+    z-index: 10;
+  }
+
   .titleCover {
     position: absolute;
     background-color: transparent;
-    border: 6px solid black;
+    border: 6px solid ${({ theme }) => theme.colors.text};
     border-right: none;
     top: 110px;
     left: -10px;
     width: 665px;
+    height: 100px;
+  }
+
+  .subtitleCover {
+    position: absolute;
+    background-color: transparent;
+    border: 6px solid ${({ theme }) => theme.colors.textLight};
+    border-left: none;
+    top: 110px;
+    left: -10px;
+    width: 470px;
     height: 100px;
   }
 `;
