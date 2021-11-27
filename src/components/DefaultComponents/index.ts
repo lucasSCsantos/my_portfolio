@@ -47,7 +47,7 @@ export const Text = styled('p')<TextProps>`
   `}
 `;
 
-export const Area = styled('div')<AreaProps>`
+export const Area = styled.div<AreaProps>`
   ${({ backgroundColor = 'background', width, height }) => css`
     background-color: ${theme.colors[backgroundColor]};
     width: ${width}%;

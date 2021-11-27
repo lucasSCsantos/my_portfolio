@@ -7,6 +7,10 @@ export const Container = styled.header`
   align-items: center;
   position: relative;
 
+  /* & > div:first-child {
+    background-color: maroon;
+  } */
+
   .navLinks {
     display: flex;
     justify-content: space-between;
@@ -14,6 +18,7 @@ export const Container = styled.header`
     width: 100%;
     align-self: center;
     margin: 0 2rem;
+    /* background-color: blue; */
   }
 
   .iconLinks {
@@ -27,16 +32,20 @@ export const Container = styled.header`
     width: 7.5rem;
   }
 
-  /* @media (max-width: 1440px) {
+  @media (max-width: 1440px) {
   }
   @media (max-width: 1000px) {
-    .iconLinks {
+    & > div:first-child {
+      width: 100%;
+      background-color: maroon;
+    }
+    & > div:nth-child(2) {
       display: none;
     }
-  } */
-  /* @media (max-width: 700px) {
+  }
+  @media (max-width: 700px) {
     padding: 0 2rem;
-  } */
+  }
 `;
 
 export const NavLinkContainer = styled.div`
