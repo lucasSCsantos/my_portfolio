@@ -21,12 +21,14 @@ function Header() {
       </Area>
       <Area backgroundColor="transparent" width={55} height="100%">
         <ul className="iconLinks">
+          {/* ---------------Resolver erro forwardRef neste componente---------- */}
           <IconLink path={GIT_HUB}>
             <SiLinkedin />
           </IconLink>
           <IconLink path={LINKEDIN}>
             <SiGithub />
           </IconLink>
+          {/* ---------------Resolver erro forwardRef neste componente---------- */}
         </ul>
       </Area>
     </Container>
