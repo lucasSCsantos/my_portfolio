@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import theme from '../../styles/theme';
 
 const { sizes, colors } = theme;
+const sizeArr = Object.values(sizes);
 
 export type HeadingProps = {
   color?: keyof typeof colors;
@@ -33,42 +34,37 @@ export const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
     @media (max-width: 1440px) {
-      font-size: calc(${sizes[size]} - 2rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 1]};
     }
     @media (max-width: 1024px) {
-      font-size: calc(${sizes[size]} - 2.5rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 2]};
     }
     @media (max-width: 834px) {
-      font-size: calc(${sizes[size]} - 3rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 3]};
     }
     @media (max-width: 428px) {
-      font-size: calc(${sizes[size]} - 3.5rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 4]};
     }
   `}
 `;
 
 export const Text = styled('p')<TextProps>`
-  ${({
-    color = 'text',
-    size = 'xsmall',
-    fontWeight = 600,
-    lineHeight = 1.5
-  }) => css`
+  ${({ color = 'text', size, fontWeight = 600, lineHeight = 1.5 }) => css`
     font-size: ${sizes[size]};
     color: ${colors[color]};
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
     @media (max-width: 1440px) {
-      font-size: calc(${sizes[size]} - 0.125rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 1]};
     }
     @media (max-width: 1024px) {
-      font-size: calc(${sizes[size]} - 0.25rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 2]};
     }
     @media (max-width: 834px) {
-      font-size: calc(${sizes[size]} - 0.375rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 3]};
     }
     @media (max-width: 428px) {
-      font-size: calc(${sizes[size]} - 0.5rem);
+      font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 4]};
     }
   `}
 `;

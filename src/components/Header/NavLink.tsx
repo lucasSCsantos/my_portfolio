@@ -15,7 +15,7 @@ function NavLink({ text, path = '/' }: NavLinkProps) {
   return (
     <NavLinkContainer>
       <Link href={path}>
-        <Text>{text}</Text>
+        <Text size="xsmall">{text}</Text>
       </Link>
     </NavLinkContainer>
   );

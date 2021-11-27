@@ -36,10 +36,10 @@ export const Container = styled.div`
     background-color: transparent;
     border: 6px solid ${({ theme }) => theme.colors.text};
     border-right: none;
-    top: 110px;
-    left: -10px;
-    width: 665px;
-    height: 100px;
+    top: 6.875rem;
+    left: -0.625rem;
+    width: 41.5625rem;
+    height: 6.25rem;
   }
 
   .subtitleCover {
@@ -47,10 +47,41 @@ export const Container = styled.div`
     background-color: transparent;
     border: 6px solid ${({ theme }) => theme.colors.textLight};
     border-left: none;
-    top: 110px;
-    left: -10px;
-    width: 470px;
-    height: 100px;
+    top: 6.875rem;
+    left: -0.625rem;
+    width: 29.375rem;
+    height: 6.25rem;
+  }
+
+  @media (max-width: 1440px) {
+    .titleCover {
+      height: 5rem;
+      top: 4.2rem;
+    }
+
+    .subtitleCover {
+      height: 5rem;
+      top: 4.2rem;
+      width: 22rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    .titleCover {
+      height: 3.6rem;
+      top: 2.6rem;
+      border-width: 4px;
+    }
+
+    .subtitleCover {
+      height: 3.6rem;
+      top: 2.6rem;
+      width: 14rem;
+      border-width: 4px;
+    }
+  }
+  @media (max-width: 834px) {
+  }
+  @media (max-width: 428px) {
   }
 `;
 

@@ -13,7 +13,8 @@ const theme = {
     transparent: '#00000000'
   },
   sizes: {
-    xxsmall: '1rem',
+    xxxsmall: '1rem',
+    xxsmall: '1.3rem',
     xsmall: '1.5rem',
     small: '2rem',
     normal: '3rem',
