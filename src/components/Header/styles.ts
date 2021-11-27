@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export type AreaProps = {
-  width: number;
-  height: number;
-};
-
 export const Container = styled.header`
   width: 100%;
   height: 7.5rem;
@@ -22,4 +17,10 @@ export const Container = styled.header`
   }
 `;
 
-export const NavLinkContainer = styled.div``;
+export const NavLinkContainer = styled.div`
+  cursor: pointer;
+`;
+
+export const IconLinkContainer = styled.div`
+  cursor: pointer;
+`;
