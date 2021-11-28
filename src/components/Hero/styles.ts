@@ -123,7 +123,7 @@ export const Container = styled.div`
 
     .heroSubtitle {
       margin: 0;
-      top: -3rem;
+      top: -4rem;
       display: flex;
       flex-direction: column;
       h1 {
@@ -148,19 +148,6 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 428px) {
-    display: flex;
-    flex-direction: column;
-
-    & > div:first-child,
-    & > div:nth-child(2) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 90%;
-    }
-
     .heroTitle {
       h1 {
         font-size: ${({ theme }) => theme.sizes.small};
@@ -218,7 +205,7 @@ export const WavesContainer = styled.svg`
 
   @keyframes moveBackWave {
     from {
-      transform: translate(-37.5rem, -2rem);
+      transform: translate(-30rem, -2rem);
     }
     to {
       transform: translate(0, -2rem);
@@ -227,7 +214,7 @@ export const WavesContainer = styled.svg`
 
   @keyframes moveMidWave {
     from {
-      transform: translate(-25rem, 1rem);
+      transform: translate(-22rem, 1rem);
     }
     to {
       transform: translate(0, 1rem);
@@ -236,10 +223,22 @@ export const WavesContainer = styled.svg`
 
   @keyframes moveFrontWave {
     from {
-      transform: translate(-18.75rem, 1rem);
+      transform: translate(-16rem, 1rem);
     }
     to {
       transform: translate(0, 1rem);
     }
+  }
+
+  @media (max-width: 1440px) {
+    height: 20rem;
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 834px) {
+    height: 17rem;
+  }
+  @media (max-width: 428px) {
+    height: 15rem;
   }
 `;

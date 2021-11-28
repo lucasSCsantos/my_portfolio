@@ -47,6 +47,9 @@ export const Container = styled.header`
     }
   }
   @media (max-width: 428px) {
+    .navLinks {
+      margin: 0 2rem;
+    }
     .navLinks > div:first-child {
       display: none;
     }
