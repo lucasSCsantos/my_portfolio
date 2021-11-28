@@ -239,6 +239,6 @@ export const WavesContainer = styled.svg`
     height: 17rem;
   }
   @media (max-width: 428px) {
-    height: 15rem;
+    height: 12rem;
   }
 `;
