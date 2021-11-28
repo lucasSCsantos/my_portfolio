@@ -54,6 +54,13 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1440px) {
+    .heroSubtitle {
+      margin-left: 0.65rem;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 10;
+    }
+
     .titleCover {
       height: 5rem;
       top: 4.2rem;
@@ -66,22 +73,124 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 1024px) {
+    .heroTitle {
+      margin-left: 6rem;
+    }
+
     .titleCover {
       height: 3.6rem;
       top: 2.6rem;
-      border-width: 4px;
+      border-width: 0.25rem;
     }
 
     .subtitleCover {
-      height: 3.6rem;
-      top: 2.6rem;
+      height: 3.2rem;
+      top: 2.8rem;
       width: 14rem;
-      border-width: 4px;
+      border-width: 0.25rem;
     }
   }
   @media (max-width: 834px) {
+    display: flex;
+    flex-direction: column;
+
+    & > div:first-child,
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 90%;
+    }
+
+    .heroTitle {
+      margin: 0;
+      top: 1rem;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        justify-content: flex-end;
+        text-align: end;
+        font-size: ${({ theme }) => theme.sizes.normal};
+      }
+      p {
+        justify-content: flex-start;
+        text-align: start;
+        font-size: ${({ theme }) => theme.sizes.xxsmall};
+      }
+    }
+
+    .heroSubtitle {
+      margin: 0;
+      top: -3rem;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        justify-content: flex-start;
+        text-align: start;
+        font-size: ${({ theme }) => theme.sizes.normal};
+      }
+    }
+
+    .titleCover {
+      width: 28rem;
+      height: 4rem;
+      top: 4.7rem;
+      border: 4px solid ${({ theme }) => theme.colors.text};
+    }
+
+    .subtitleCover {
+      width: 20rem;
+      height: 4rem;
+      top: 4.7rem;
+      border: 4px solid ${({ theme }) => theme.colors.textLight};
+    }
   }
   @media (max-width: 428px) {
+    display: flex;
+    flex-direction: column;
+
+    & > div:first-child,
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 90%;
+    }
+
+    .heroTitle {
+      h1 {
+        font-size: ${({ theme }) => theme.sizes.small};
+      }
+      p {
+        font-size: ${({ theme }) => theme.sizes.xxxsmall};
+      }
+    }
+
+    .heroSubtitle {
+      top: -3rem;
+      h1 {
+        font-size: ${({ theme }) => theme.sizes.small};
+      }
+    }
+
+    .titleCover {
+      width: 19rem;
+      height: 2.8rem;
+      top: 3rem;
+      left: 0.55rem;
+      border: 3px solid ${({ theme }) => theme.colors.text};
+    }
+
+    .subtitleCover {
+      width: 13.5rem;
+      height: 3rem;
+      top: 2.9rem;
+      border: 4px solid ${({ theme }) => theme.colors.textLight};
+    }
   }
 `;
 

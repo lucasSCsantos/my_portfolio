@@ -9,7 +9,7 @@ function Hero() {
         <div className="heroTitle">
           <div className="titleCover" />
           <Heading level={1} size="large">
-            OLÁ EU SOU
+            OLÁ, EU SOU
             <br />
             LUCAS SANTANA
           </Heading>
