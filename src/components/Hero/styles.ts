@@ -192,29 +192,29 @@ export const WavesContainer = styled.svg`
   left: 0;
 
   .backWave {
-    animation: moveBackWave 8s ease-in-out infinite alternate;
+    animation: moveBackWave 6s ease-in-out infinite alternate;
   }
 
   .midWave {
-    animation: moveMidWave 6s 1s ease-in-out infinite alternate;
+    animation: moveMidWave 6s 1.2s ease-in-out infinite alternate;
   }
 
   .frontWave {
-    animation: moveFrontWave 4s ease-in-out infinite alternate;
+    animation: moveFrontWave 6s 0.7s ease-in-out infinite alternate;
   }
 
   @keyframes moveBackWave {
     from {
-      transform: translate(-600px, -2rem);
+      transform: translate(-100px, -3rem);
     }
     to {
-      transform: translate(0, -2rem);
+      transform: translate(0, -3rem);
     }
   }
 
   @keyframes moveMidWave {
     from {
-      transform: translate(-500px, 1rem);
+      transform: translate(-200px, 1rem);
     }
     to {
       transform: translate(0, 1rem);
@@ -223,10 +223,10 @@ export const WavesContainer = styled.svg`
 
   @keyframes moveFrontWave {
     from {
-      transform: translate(-400px, 1rem);
+      transform: translate(-300px, 2rem);
     }
     to {
-      transform: translate(0, 1rem);
+      transform: translate(0, 2rem);
     }
   }
 
