@@ -5,7 +5,8 @@ export const Container = styled.header`
   height: 7.5rem;
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
+  z-index: 10;
 
   .navLinks {
     display: flex;
@@ -13,7 +14,7 @@ export const Container = styled.header`
     align-items: center;
     width: 100%;
     align-self: center;
-    margin: 0 2rem;
+    margin: 0 3rem;
   }
 
   .iconLinks {
@@ -46,6 +47,9 @@ export const Container = styled.header`
     }
   }
   @media (max-width: 428px) {
+    .navLinks {
+      margin: 0 2rem;
+    }
     .navLinks > div:first-child {
       display: none;
     }

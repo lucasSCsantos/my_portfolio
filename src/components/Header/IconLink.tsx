@@ -1,4 +1,4 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import { ReactNode } from 'react';
 import { IconLinkContainer } from './styles';
 
@@ -10,7 +10,9 @@ interface IconLinkProps {
 function IconLink({ path = '/', children }: IconLinkProps) {
   return (
     <IconLinkContainer>
-      <Link href={path}>{children}</Link>
+      <a href={path} target="_blank" rel="noreferrer">
+        {children}
+      </a>
     </IconLinkContainer>
   );
 }
