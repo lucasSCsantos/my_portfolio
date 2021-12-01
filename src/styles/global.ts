@@ -5,7 +5,6 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
   }
 
   body {
@@ -14,6 +13,7 @@ export default createGlobalStyle`
     font: 400 16px Inter, sans-serif;
   }
 
+<<<<<<< HEAD
   img {
     width: 100%;
     max-width: 100%;
@@ -49,4 +49,6 @@ export default createGlobalStyle`
     @media (max-width: 460px) {
     }
   }
+=======
+>>>>>>> main
 `;
