@@ -42,12 +42,12 @@ export const SkillContainer = styled.div`
 `;
 
 export const Bubble = styled.div<BubbleProps>`
-  margin: 0 10px;
   ${({ backgroundImage, size, margin, float }) => css`
     background-image: url(${backgroundImage});
     width: ${size}px;
     height: ${size}px;
     margin-top: ${margin}px;
+    margin-right: ${margin - 5}px;
     transform: translate(0, ${float}px);
   `}
   background-size: contain;
