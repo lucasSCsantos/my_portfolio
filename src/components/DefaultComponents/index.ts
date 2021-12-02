@@ -7,7 +7,7 @@ const sizeArr = Object.values(sizes);
 export type HeadingProps = {
   color?: keyof typeof colors;
   size?: keyof typeof sizes;
-  fontWeight?: 100 | 400 | 700;
+  fontWeight?: 100 | 400 | 700 | 1000;
   lineHeight?: string | number;
   level?: 1 | 2 | 3 | 4 | 5 | 6;
 };
