@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+export type BubbleProps = {
+  backgroundImage: string;
+};
 
 export const Container = styled.div`
   height: 100vh;
@@ -27,9 +31,13 @@ export const SkillContainer = styled.div`
   background-color: red;
 `;
 
-export const Bubble = styled.div`
-  width: 80px;
-  height: 80px;
+export const Bubble = styled.div<BubbleProps>`
+  ${({ backgroundImage }) => css`
+    background-image: url(${backgroundImage});
+  `}
+  background-size: contain;
+  width: 64px;
+  height: 64px;
   border-radius: 100%;
-  box-shadow: inset 0px 3px 40px rgba(250, 250, 250, 0.5);
+  box-shadow: inset 0px 3px 40px rgba(250, 250, 250, 0.7);
 `;
