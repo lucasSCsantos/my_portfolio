@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 
 export type BubbleProps = {
   backgroundImage: string;
+  size: number;
+  margin: number;
 };
 
 export const Container = styled.div`
@@ -27,17 +29,36 @@ export const SkillsContainer = styled.div`
 export const SkillContainer = styled.div`
   width: 50%;
   text-align: center;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  & > div:nth-child(2) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Bubble = styled.div<BubbleProps>`
-  ${({ backgroundImage }) => css`
+  margin: 0 10px 5px 10px;
+  ${({ backgroundImage, size, margin }) => css`
     background-image: url(${backgroundImage});
+    width: ${size}px;
+    height: ${size}px;
+    margin-top: ${margin}px;
   `}
   background-size: contain;
-  width: 64px;
-  height: 64px;
   border-radius: 100%;
   box-shadow: inset 0px 3px 40px rgba(250, 250, 250, 0.7);
+  animation: moveBubble 2s ease-in-out infinite alternate;
+
+  @keyframes moveBubble {
+    from {
+      transform: translate(0, -0.3rem);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
 `;
