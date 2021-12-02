@@ -10,10 +10,9 @@ export default createGlobalStyle`
   body {
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text};
-    font: 400 16px Inter, sans-serif;
+    font: 400 16px 'Montserrat', sans-serif;
   }
 
-<<<<<<< HEAD
   img {
     width: 100%;
     max-width: 100%;
@@ -49,6 +48,4 @@ export default createGlobalStyle`
     @media (max-width: 460px) {
     }
   }
-=======
->>>>>>> main
 `;
