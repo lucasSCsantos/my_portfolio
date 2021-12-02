@@ -14,11 +14,8 @@ export const Container = styled.div`
 
   & > div:nth-child(2) {
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-
-    h1 {
-      background-color: red;
-    }
   }
 `;
 
@@ -30,7 +27,6 @@ export const SkillsContainer = styled.div`
 export const SkillContainer = styled.div`
   width: 50%;
   text-align: center;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,25 +34,53 @@ export const SkillContainer = styled.div`
   & > div:nth-child(2) {
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 40px 0;
   }
 `;
 
 export const Bubble = styled.div<BubbleProps>`
   ${({ backgroundImage, size, margin, float }) => css`
-    background-image: url(${backgroundImage});
+    background: url(${backgroundImage}) no-repeat;
     width: ${size}px;
     height: ${size}px;
     margin-top: ${margin}px;
     margin-right: ${margin - 5}px;
     transform: translate(0, ${float}px);
   `}
+  position: relative;
   background-size: contain;
   border-radius: 100%;
-  box-shadow: inset 0px 3px 40px rgba(250, 250, 250, 0.7);
+  z-index: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: ${({ theme }) => theme.colors.background};
   animation: moveBubble 2s ease-in-out infinite alternate;
   @keyframes moveBubble {
     from {
       transform: translate(0, 0);
+    }
+  }
+
+  div {
+    background: white;
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    border-radius: 2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+  }
+
+  &:hover {
+    div {
+      visibility: visible;
+      opacity: 1;
     }
   }
 `;

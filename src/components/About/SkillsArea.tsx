@@ -7,8 +7,8 @@ function SkillsArea() {
     <SkillsContainer>
       <SkillArea text="Linguagens" arr={lenguages} />
       <SkillArea text="Frameworks" arr={frameworks} />
-      <SkillArea text="Frameworks" arr={databases} />
-      <SkillArea text="Frameworks" arr={others} />
+      <SkillArea text="Bancos de dados" arr={databases} />
+      <SkillArea text="Outros" arr={others} />
     </SkillsContainer>
   );
 }

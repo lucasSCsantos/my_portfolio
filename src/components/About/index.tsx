@@ -6,8 +6,8 @@ function About() {
   return (
     <Container>
       <Area backgroundColor="transparent" width={45} height="100%" />
-      <Area backgroundColor="secondary" width={55} height="100%">
-        <Heading level={1} size="xxlarge" fontWeight={1000} color="textLight">
+      <Area backgroundColor="primary" width={55} height="100%">
+        <Heading level={1} size="large" fontWeight={1000} color="textLight">
           SKILLS
         </Heading>
         <SkillsArea />

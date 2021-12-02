@@ -7,15 +7,17 @@ function SkillArea({ text, arr }) {
       <Heading level={2} size="normal" color="textLight" fontWeight={1000}>
         {text}
       </Heading>
-      <Area backgroundColor="quaternary" width={60}>
-        {arr.map(({ id, bg }) => (
+      <Area backgroundColor="transparent" width={50}>
+        {arr.map(({ id, bg, name }) => (
           <Bubble
             key={id}
             backgroundImage={bg}
-            size={Math.floor(Math.random() * 20 + 50)}
+            size={Math.floor(Math.random() * 16 + 50)}
             margin={Math.random() * 20 + 10}
-            float={Math.random() * -11 - 8}
-          />
+            float={Math.random() * -8 - 8}
+          >
+            <div>{name}</div>
+          </Bubble>
         ))}
       </Area>
     </SkillContainer>
