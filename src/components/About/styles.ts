@@ -5,6 +5,7 @@ export type BubbleProps = {
   size: number;
   margin: number;
   float: number;
+  zindex: number;
 };
 
 export const Container = styled.div`
@@ -39,18 +40,18 @@ export const SkillContainer = styled.div`
 `;
 
 export const Bubble = styled.div<BubbleProps>`
-  ${({ backgroundImage, size, margin, float }) => css`
+  ${({ backgroundImage, size, margin, float, zindex }) => css`
     background: url(${backgroundImage}) no-repeat;
     width: ${size}px;
     height: ${size}px;
     margin-top: ${margin}px;
     margin-right: ${margin - 5}px;
     transform: translate(0, ${float}px);
+    z-index: ${zindex};
   `}
   position: relative;
   background-size: contain;
   border-radius: 100%;
-  z-index: 0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.colors.background};
   animation: moveBubble 2s ease-in-out infinite alternate;
@@ -60,7 +61,7 @@ export const Bubble = styled.div<BubbleProps>`
     }
   }
 
-  div {
+  .popover {
     background: white;
     position: absolute;
     left: 30px;
@@ -77,8 +78,17 @@ export const Bubble = styled.div<BubbleProps>`
     transition: visibility 0s, opacity 0.2s linear;
   }
 
+  .triangle {
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    position: absolute;
+    left: 5px;
+    border-left: 5px solid transparent;
+    bottom: -5px;
+  }
+
   &:hover {
-    div {
+    .popover {
       visibility: visible;
       opacity: 1;
     }

@@ -8,15 +8,19 @@ function SkillArea({ text, arr }) {
         {text}
       </Heading>
       <Area backgroundColor="transparent" width={50}>
-        {arr.map(({ id, bg, name }) => (
+        {arr.map(({ id, bg, name, size }, index) => (
           <Bubble
             key={id}
             backgroundImage={bg}
-            size={Math.floor(Math.random() * 16 + 50)}
+            size={size}
             margin={Math.random() * 20 + 10}
             float={Math.random() * -8 - 8}
+            zindex={arr.length - index}
           >
-            <div>{name}</div>
+            <div className="popover">
+              {name}
+              <div className="triangle" />
+            </div>
           </Bubble>
         ))}
       </Area>

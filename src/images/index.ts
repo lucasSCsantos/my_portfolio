@@ -16,29 +16,29 @@ import git from './git.png';
 import figma from './figma.png';
 
 export const lenguages = [
-  { id: 1, bg: js, name: 'JavaScript' },
-  { id: 2, bg: ts, name: 'TypeScript' },
-  { id: 3, bg: css, name: 'CSS' },
-  { id: 4, bg: html, name: 'HTML' }
+  { id: 1, bg: js, name: 'JavaScript', size: 64 },
+  { id: 2, bg: ts, name: 'TypeScript', size: 48 },
+  { id: 3, bg: css, name: 'CSS', size: 64 },
+  { id: 4, bg: html, name: 'HTML', size: 56 }
 ];
 
 export const frameworks = [
-  { id: 1, bg: next, name: 'Next' },
-  { id: 2, bg: node, name: 'Node' },
-  { id: 3, bg: express, name: 'Express' },
-  { id: 4, bg: react, name: 'React' },
-  { id: 5, bg: redux, name: 'Redux' },
-  { id: 6, bg: styledC, name: 'Styled-Components' }
+  { id: 1, bg: next, name: 'Next', size: 48 },
+  { id: 2, bg: node, name: 'Node', size: 56 },
+  { id: 3, bg: express, name: 'Express', size: 56 },
+  { id: 4, bg: react, name: 'React', size: 64 },
+  { id: 5, bg: redux, name: 'Redux', size: 56 },
+  { id: 6, bg: styledC, name: 'Styled-Components', size: 64 }
 ];
 
 export const databases = [
-  { id: 1, bg: mongo, name: 'MongoDB' },
-  { id: 2, bg: mysql, name: 'MySQL' },
-  { id: 3, bg: sequelize, name: 'Sequelize' }
+  { id: 1, bg: mongo, name: 'MongoDB', size: 56 },
+  { id: 2, bg: mysql, name: 'MySQL', size: 64 },
+  { id: 3, bg: sequelize, name: 'Sequelize', size: 48 }
 ];
 
 export const others = [
-  { id: 1, bg: github, name: 'GitHub' },
-  { id: 2, bg: git, name: 'Git' },
-  { id: 3, bg: figma, name: 'Figma' }
+  { id: 1, bg: github, name: 'GitHub', size: 56 },
+  { id: 2, bg: git, name: 'Git', size: 48 },
+  { id: 3, bg: figma, name: 'Figma', size: 64 }
 ];
