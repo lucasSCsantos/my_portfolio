@@ -94,3 +94,30 @@ export const Bubble = styled.div<BubbleProps>`
     }
   }
 `;
+
+export const FishContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  img {
+    width: 150px;
+    position: absolute;
+    opacity: 0.7;
+  }
+
+  .fish1 {
+    top: 50%;
+    left: 20px;
+  }
+
+  .fish2 {
+    right: 20px;
+    top: 85%;
+  }
+
+  .fish3 {
+    right: 40px;
+    top: 10%;
+  }
+`;
