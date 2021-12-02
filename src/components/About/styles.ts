@@ -4,6 +4,7 @@ export type BubbleProps = {
   backgroundImage: string;
   size: number;
   margin: number;
+  float: number;
 };
 
 export const Container = styled.div`
@@ -41,23 +42,20 @@ export const SkillContainer = styled.div`
 `;
 
 export const Bubble = styled.div<BubbleProps>`
-  margin: 0 10px 5px 10px;
-  ${({ backgroundImage, size, margin }) => css`
+  margin: 0 10px;
+  ${({ backgroundImage, size, margin, float }) => css`
     background-image: url(${backgroundImage});
     width: ${size}px;
     height: ${size}px;
     margin-top: ${margin}px;
+    transform: translate(0, ${float}px);
   `}
   background-size: contain;
   border-radius: 100%;
   box-shadow: inset 0px 3px 40px rgba(250, 250, 250, 0.7);
   animation: moveBubble 2s ease-in-out infinite alternate;
-
   @keyframes moveBubble {
     from {
-      transform: translate(0, -0.3rem);
-    }
-    to {
       transform: translate(0, 0);
     }
   }
