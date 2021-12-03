@@ -17,6 +17,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+
+    h1 {
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
 `;
 
@@ -120,4 +124,16 @@ export const FishContainer = styled.div`
     right: 40px;
     top: 10%;
   }
+`;
+
+export const AboutContainer = styled.div`
+  width: 60%;
+  position: absolute;
+  right: 40px;
+  height: 40%;
+  align-self: center;
+  display: flex;
+  text-align: end;
+  align-items: flex-end;
+  flex-direction: column;
 `;
