@@ -33,6 +33,7 @@ export const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
     color: ${colors[color]};
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
+    z-index: 10;
     @media (max-width: 1440px) {
       font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 1]};
     }

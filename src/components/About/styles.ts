@@ -17,6 +17,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+
+    h1 {
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
   }
 `;
 
@@ -93,4 +97,43 @@ export const Bubble = styled.div<BubbleProps>`
       opacity: 1;
     }
   }
+`;
+
+export const FishContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  img {
+    width: 150px;
+    position: absolute;
+    opacity: 0.7;
+  }
+
+  .fish1 {
+    top: 50%;
+    left: 20px;
+  }
+
+  .fish2 {
+    right: 20px;
+    top: 85%;
+  }
+
+  .fish3 {
+    right: 40px;
+    top: 10%;
+  }
+`;
+
+export const AboutContainer = styled.div`
+  width: 60%;
+  position: absolute;
+  right: 40px;
+  height: 40%;
+  align-self: center;
+  display: flex;
+  text-align: end;
+  align-items: flex-end;
+  flex-direction: column;
 `;
