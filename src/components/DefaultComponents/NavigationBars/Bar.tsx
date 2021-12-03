@@ -13,7 +13,7 @@ function Bar({ width }) {
     window.addEventListener('scroll', onScroll);
     return scrollTop <= width && scrollTop >= width - 970
       ? setClassName('actual')
-      : setClassName('not');
+      : setClassName('');
   }, [scrollTop]);
 
   const scroll = scrollWidth => {

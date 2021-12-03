@@ -16,6 +16,7 @@ export const Container = styled.div`
 `;
 
 export const BarContainer = styled.div`
+  transition: ease 0.5s;
   cursor: pointer;
   height: 0.625rem;
   width: 5rem;
