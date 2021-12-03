@@ -1,7 +1,7 @@
 import Bar from './Bar';
 import { Container } from './styles';
 
-function PageProgress({ arr }) {
+function NavigationBars({ arr }) {
   return (
     <Container>
       {arr.map(width => (
@@ -11,4 +11,4 @@ function PageProgress({ arr }) {
   );
 }
 
-export default PageProgress;
+export default NavigationBars;
