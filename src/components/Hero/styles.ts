@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
 
   .heroSubtitle {
-    margin-left: 0.65rem;
+    margin-left: 0.6rem;
     margin-top: 8rem;
     position: relative;
     z-index: 10;
@@ -49,7 +49,7 @@ export const Container = styled.div`
     border-left: none;
     top: 6.875rem;
     left: -0.625rem;
-    width: 29.375rem;
+    width: 28.25rem;
     height: 6.25rem;
   }
 
@@ -69,7 +69,7 @@ export const Container = styled.div`
     .subtitleCover {
       height: 5rem;
       top: 4.2rem;
-      width: 22rem;
+      width: 19.5rem;
     }
   }
   @media (max-width: 1024px) {
@@ -168,7 +168,6 @@ export const Container = styled.div`
       width: 19rem;
       height: 2.8rem;
       top: 3rem;
-      left: 0.55rem;
       border: 3px solid ${({ theme }) => theme.colors.text};
     }
 

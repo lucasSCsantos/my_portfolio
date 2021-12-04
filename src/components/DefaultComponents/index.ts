@@ -7,7 +7,7 @@ const sizeArr = Object.values(sizes);
 export type HeadingProps = {
   color?: keyof typeof colors;
   size?: keyof typeof sizes;
-  fontWeight?: 100 | 400 | 700;
+  fontWeight?: 100 | 400 | 700 | 1000;
   lineHeight?: string | number;
   level?: 1 | 2 | 3 | 4 | 5 | 6;
 };
@@ -33,6 +33,7 @@ export const Heading = styled('h1').attrs<HeadingProps>(({ level = 1 }) => ({
     color: ${colors[color]};
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
+    z-index: 10;
     @media (max-width: 1440px) {
       font-size: ${sizeArr[sizeArr.indexOf(sizes[size]) - 1]};
     }
