@@ -10,8 +10,28 @@ export const Container = styled.div`
   height: 6.25rem;
   z-index: 21;
   .actual {
-    width: 6.25rem !important;
+    width: 6.25rem;
     background-color: ${({ theme }) => theme.colors.navHighlight};
+  }
+  @media (max-width: 1440px) {
+    .actual {
+      width: 5.75rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    top: 50%;
+    .actual {
+      width: 4.5rem;
+    }
+  }
+  @media (max-width: 834px) {
+    top: 45%;
+    .actual {
+      width: 3.25rem;
+    }
+  }
+  @media (max-width: 428px) {
+    top: 35%;
   }
 `;
 
@@ -23,4 +43,20 @@ export const BarContainer = styled.div`
   margin-bottom: 1rem;
   background-color: ${({ theme }) => theme.colors.nav};
   border-radius: 6.25rem;
+
+  @media (max-width: 1440px) {
+    width: 4.5rem;
+  }
+  @media (max-width: 1024px) {
+    width: 3.25rem;
+    height: 0.5625rem;
+  }
+  @media (max-width: 834px) {
+    margin-bottom: 0.5rem;
+
+    width: 2rem;
+    height: 0.5rem;
+  }
+  @media (max-width: 428px) {
+  }
 `;
