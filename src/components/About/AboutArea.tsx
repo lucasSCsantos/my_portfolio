@@ -8,10 +8,10 @@ function AboutContent() {
         SOBRE MIM
       </Heading>
       <Text size="xsmall" color="text">
-        Focado em aprendizado, estou sempre buscando me aprofundar mais no
-        conhecimento. Estudo desenvolvimento web há mais de um ano, praticando
-        com diversos projetos com ferramentas front-end e back-end. Meu
-        propósito é facilitar a vida das pessoas através da tecnologia.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue
+        eros ac eros scelerisque, non consequat dolor convallis. Vestibulum
+        accumsan rutrum convallis. Nulla malesuada, mauris a hendrerit mollis,
+        tellus nunc consectetur justo, eget lobortis nunc risus id nisl.
       </Text>
     </AboutContainer>
   );

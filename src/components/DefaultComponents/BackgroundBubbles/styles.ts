@@ -3,7 +3,8 @@ import styled from 'styled-components';
 // eslint-disable-next-line import/prefer-default-export
 export const Container = styled.div`
   position: absolute;
-  width: 100%;
+  width: 55%;
+  right: 0;
   height: 100%;
   overflow: hidden;
 
@@ -17,6 +18,10 @@ export const Container = styled.div`
     opacity: 0.2;
     animation: bubble 15s ease-in-out infinite,
       sideWays 4s ease-in-out infinite alternate;
+  }
+
+  @media (max-width: 834px) {
+    width: 100%;
   }
 
   @keyframes bubble {

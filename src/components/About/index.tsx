@@ -12,13 +12,13 @@ function About() {
         <AboutContent />
       </Area>
       <Area backgroundColor="primary" width={55} height="100%">
-        <BackgroundBubbles />
         <BackgroundFishes />
         <Heading level={1} size="large" fontWeight={1000} color="textLight">
           SKILLS
         </Heading>
         <SkillsArea />
       </Area>
+      <BackgroundBubbles />
     </Container>
   );
 }

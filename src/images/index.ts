@@ -23,18 +23,18 @@ export const lenguages = [
 ];
 
 export const frameworks = [
-  { id: 1, bg: next, name: 'Next', size: 48 },
-  { id: 2, bg: node, name: 'Node', size: 56 },
-  { id: 3, bg: express, name: 'Express', size: 56 },
-  { id: 4, bg: react, name: 'React', size: 64 },
+  { id: 1, bg: node, name: 'Node', size: 56 },
+  { id: 2, bg: styledC, name: 'Styled-Components', size: 64 },
+  { id: 3, bg: next, name: 'Next', size: 48 },
+  { id: 4, bg: express, name: 'Express', size: 48 },
   { id: 5, bg: redux, name: 'Redux', size: 56 },
-  { id: 6, bg: styledC, name: 'Styled-Components', size: 64 }
+  { id: 6, bg: react, name: 'React', size: 64 }
 ];
 
 export const databases = [
-  { id: 1, bg: mongo, name: 'MongoDB', size: 56 },
-  { id: 2, bg: mysql, name: 'MySQL', size: 64 },
-  { id: 3, bg: sequelize, name: 'Sequelize', size: 48 }
+  { id: 1, bg: sequelize, name: 'Sequelize', size: 48 },
+  { id: 2, bg: mongo, name: 'MongoDB', size: 56 },
+  { id: 3, bg: mysql, name: 'MySQL', size: 64 }
 ];
 
 export const others = [

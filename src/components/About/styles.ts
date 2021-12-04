@@ -44,7 +44,7 @@ export const Container = styled.div`
       text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
     & > div:first-child {
-      height: 90%;
+      height: 80%;
       width: 100%;
       background-color: ${({ theme }) => theme.colors.primary};
       div {
@@ -63,6 +63,25 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 428px) {
+    h1 {
+      font-size: ${({ theme }) => theme.sizes.small};
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    h2 {
+      font-size: ${({ theme }) => theme.sizes.xxsmall};
+      width: 90%;
+    }
+    p {
+      font-size: ${({ theme }) => theme.sizes.xxxsmall};
+    }
+    & > div:first-child {
+      height: 60%;
+      div {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+      }
+    }
   }
 `;
 
@@ -82,6 +101,12 @@ export const SkillContainer = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 10px 0 60px 0;
+  }
+  @media (max-width: 834px) {
+    & > div:nth-child(2) {
+      width: 60%;
+      margin: 10px 0 20px 0;
+    }
   }
 `;
 
@@ -106,8 +131,14 @@ export const Bubble = styled.div<BubbleProps>`
       margin-right: ${margin - 10}px;
     }
     @media (max-width: 834px) {
+      width: ${size - 20}px;
+      height: ${size - 20}px;
+      margin-right: ${margin - 10}px;
     }
     @media (max-width: 428px) {
+      width: ${size - 32}px;
+      height: ${size - 32}px;
+      margin-right: 5px;
     }
   `}
   position: relative;
@@ -141,11 +172,11 @@ export const Bubble = styled.div<BubbleProps>`
 
   .triangle {
     border-right: 5px solid transparent;
-    border-top: 5px solid white;
+    border-bottom: 5px solid white;
     position: absolute;
     left: 5px;
     border-left: 5px solid transparent;
-    bottom: -5px;
+    top: -5px;
   }
 
   &:hover {
@@ -153,6 +184,29 @@ export const Bubble = styled.div<BubbleProps>`
       visibility: visible;
       opacity: 1;
     }
+  }
+
+  @media (max-width: 1440px) {
+    .popover {
+      left: 0;
+      top: -20px;
+      font-size: 12px;
+      transition: visibility 0s, opacity 0.2s linear;
+    }
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 834px) {
+    .popover {
+      left: 0;
+      top: 20px;
+      padding: 4px;
+
+      font-size: 12px;
+      transition: visibility 0s, opacity 0.2s linear;
+    }
+  }
+  @media (max-width: 428px) {
   }
 `;
 
@@ -187,6 +241,9 @@ export const FishContainer = styled.div`
   @media (max-width: 1024px) {
   }
   @media (max-width: 834px) {
+    img {
+      width: 120px;
+    }
     .fish1 {
       top: -20%;
     }
@@ -198,6 +255,19 @@ export const FishContainer = styled.div`
     }
   }
   @media (max-width: 428px) {
+    img {
+      width: 90px;
+    }
+    .fish1 {
+      top: -5%;
+    }
+    .fish2 {
+      top: -55%;
+    }
+    .fish3 {
+      right: 20px;
+      top: 65%;
+    }
   }
 `;
 
