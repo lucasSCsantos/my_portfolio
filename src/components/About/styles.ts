@@ -50,9 +50,9 @@ export const Container = styled.div`
       div {
         display: block;
         height: fit-content;
-        width: 60%;
-        left: 20%;
-        right: 20%;
+        width: 80%;
+        left: 10%;
+        right: 10%;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -250,10 +250,10 @@ export const FishContainer = styled.div`
   }
   @media (max-width: 834px) {
     img {
-      width: 120px;
+      width: 100px;
     }
     .fish1 {
-      top: -20%;
+      top: -10%;
     }
     .fish2 {
       top: -70%;
