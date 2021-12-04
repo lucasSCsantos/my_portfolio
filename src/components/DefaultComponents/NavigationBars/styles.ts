@@ -5,7 +5,6 @@ export const Container = styled.div`
   left: 1.25rem;
   top: 40%;
   bottom: 50%;
-  /* background-color: red; */
   width: 6.25rem;
   height: 6.25rem;
   z-index: 21;
