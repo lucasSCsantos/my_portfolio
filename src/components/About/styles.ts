@@ -156,8 +156,8 @@ export const Bubble = styled.div<BubbleProps>`
   .popover {
     background: white;
     position: absolute;
-    left: 30px;
-    top: -20px;
+    left: 10px;
+    top: -10px;
     border-radius: 2px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -172,11 +172,11 @@ export const Bubble = styled.div<BubbleProps>`
 
   .triangle {
     border-right: 5px solid transparent;
-    border-bottom: 5px solid white;
+    border-top: 5px solid white;
     position: absolute;
     left: 5px;
     border-left: 5px solid transparent;
-    top: -5px;
+    bottom: -5px;
   }
 
   &:hover {
@@ -204,6 +204,14 @@ export const Bubble = styled.div<BubbleProps>`
 
       font-size: 12px;
       transition: visibility 0s, opacity 0.2s linear;
+    }
+
+    .triangle {
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid white;
+      border-top: none;
+      border-left: 5px solid transparent;
+      bottom: 100%;
     }
   }
   @media (max-width: 428px) {
@@ -256,7 +264,7 @@ export const FishContainer = styled.div`
   }
   @media (max-width: 428px) {
     img {
-      width: 90px;
+      width: 70px;
     }
     .fish1 {
       top: -5%;

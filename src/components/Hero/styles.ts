@@ -168,7 +168,6 @@ export const Container = styled.div`
       width: 19rem;
       height: 2.8rem;
       top: 3rem;
-      left: 0.55rem;
       border: 3px solid ${({ theme }) => theme.colors.text};
     }
 
