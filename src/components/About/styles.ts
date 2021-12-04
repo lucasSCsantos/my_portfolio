@@ -22,6 +22,48 @@ export const Container = styled.div`
       text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
+
+  @media (max-width: 1440px) {
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 834px) {
+    flex-direction: column;
+    h1 {
+      color: ${({ theme }) => theme.colors.textLight};
+      font-size: ${({ theme }) => theme.sizes.normal};
+      font-weight: 1000;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    h2 {
+      font-size: ${({ theme }) => theme.sizes.small};
+    }
+    p {
+      color: ${({ theme }) => theme.colors.textLight};
+      font-size: ${({ theme }) => theme.sizes.xxsmall};
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    & > div:first-child {
+      height: 90%;
+      width: 100%;
+      background-color: ${({ theme }) => theme.colors.primary};
+      div {
+        display: block;
+        height: fit-content;
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    & > div:nth-child(2) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 428px) {
+  }
 `;
 
 export const SkillsContainer = styled.div`
@@ -39,7 +81,7 @@ export const SkillContainer = styled.div`
   & > div:nth-child(2) {
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 40px 0;
+    margin: 10px 0 60px 0;
   }
 `;
 
@@ -52,6 +94,21 @@ export const Bubble = styled.div<BubbleProps>`
     margin-right: ${margin - 5}px;
     transform: translate(0, ${float}px);
     z-index: ${zindex};
+
+    @media (max-width: 1440px) {
+      width: ${size - 4}px;
+      height: ${size - 4}px;
+      margin-right: ${margin - 10}px;
+    }
+    @media (max-width: 1024px) {
+      width: ${size - 16}px;
+      height: ${size - 16}px;
+      margin-right: ${margin - 10}px;
+    }
+    @media (max-width: 834px) {
+    }
+    @media (max-width: 428px) {
+    }
   `}
   position: relative;
   background-size: contain;
@@ -123,6 +180,24 @@ export const FishContainer = styled.div`
   .fish3 {
     right: 40px;
     top: 10%;
+  }
+
+  @media (max-width: 1440px) {
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 834px) {
+    .fish1 {
+      top: -20%;
+    }
+    .fish2 {
+      top: -70%;
+    }
+    .fish3 {
+      top: 65%;
+    }
+  }
+  @media (max-width: 428px) {
   }
 `;
 

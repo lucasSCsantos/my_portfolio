@@ -14,7 +14,7 @@ const theme = {
   },
   sizes: {
     xxxsmall: '1rem',
-    xxsmall: '1.3rem',
+    xxsmall: '1.25rem',
     xsmall: '1.5rem',
     small: '2rem',
     normal: '3rem',
