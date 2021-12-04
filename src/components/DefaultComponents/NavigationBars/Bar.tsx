@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { BarContainer } from './styles';
 
-function Bar({ width }) {
+function Bar({ width, name }) {
   const [scrollTop, setScrollTop] = useState(0);
   const [className, setClassName] = useState('');
 
@@ -18,13 +18,20 @@ function Bar({ width }) {
 
   const scroll = scrollWidth => {
     window.scroll({
-      top: scrollWidth - 969,
+      top: scrollWidth - 485,
       left: 0,
       behavior: 'smooth'
     });
   };
 
-  return <BarContainer onClick={() => scroll(width)} className={className} />;
+  return (
+    <BarContainer onClick={() => scroll(width)} className={className}>
+      <div className="popover">
+        {name}
+        <div className="triangle" />
+      </div>
+    </BarContainer>
+  );
 }
 
 export default Bar;
