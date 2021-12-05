@@ -15,10 +15,12 @@ import sequelize from '../images/sequelize.png';
 import github from '../images/github.png';
 import git from '../images/git.png';
 import figma from '../images/figma.png';
+import ecommerce from '../images/ecommerce.png';
+import slido from '../images/slido.png';
 
 export default [
-  { id: 1, techs: [git, js, html, css], name: 'Projeto 1', image: '' },
-  { id: 2, techs: [react, js, git, css], name: 'Projeto 2', image: '' },
+  { id: 1, techs: [git, js, html, css], name: 'Projeto 1', image: ecommerce },
+  { id: 2, techs: [react, js, git, css], name: 'Projeto 2', image: slido },
   {
     id: 3,
     techs: [react, styledC, git, redux, js],

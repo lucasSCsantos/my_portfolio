@@ -12,7 +12,8 @@ export default function Home() {
       <PageProgress
         arr={[
           { width: 970 / 2, areaName: 'Home' },
-          { width: 970 / 2 + 970, areaName: 'Sobre Mim' }
+          { width: 970 / 2 + 970, areaName: 'Sobre Mim' },
+          { width: 970 / 2 + 970 * 2, areaName: 'Projetos' }
         ]}
       />
       <ScrollButton />

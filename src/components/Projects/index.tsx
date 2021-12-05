@@ -9,7 +9,7 @@ function Projects({ arr }) {
       <Area backgroundColor="transparent" width={45} height="100%" />
       <Area backgroundColor="primary" width={55} height="100%">
         {arr.map(({ techs, image, id }) => (
-          <ProjectBubble techs={techs} image={image} key={id} />
+          <ProjectBubble techs={techs} image={image} key={id} id={id} />
         ))}
       </Area>
       <BackgroundBubbles />
