@@ -6,19 +6,22 @@ import { ProjectBubblesContainer, MainBubble, SmartBubble } from './styles';
 function ProjectBubble({ techs, image }) {
   const [positionsArr, setPositionsArr] = useState([]);
   useEffect(() => {
+    const checkRepeat = arr => {
+      const repeat = arr.some((el, i) => arr.indexOf(el) === i);
+      return repeat;
+    };
     const createPositionsArr = () => {
       const positionArr = techs.map(
         () => positions[Math.round(Math.random() * 6)]
       );
+
       setPositionsArr(positionArr);
     };
     createPositionsArr();
-    console.log(positionsArr);
   }, []);
   return (
     <ProjectBubblesContainer>
       <MainBubble backgroundImage={image}>
-        <div className="one ring" />
         {positionsArr.length > 0 &&
           techs.map((tech, index) => (
             <SmartBubble

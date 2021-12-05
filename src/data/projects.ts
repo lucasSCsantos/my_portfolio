@@ -17,8 +17,7 @@ import git from '../images/git.png';
 import figma from '../images/figma.png';
 
 export default [
-  // { id: 1, techs: [git, js, html, css], name: 'Projeto 1', image: '' },
-  { id: 1, techs: [css], name: 'Projeto 1', image: '' },
+  { id: 1, techs: [git, js, html, css], name: 'Projeto 1', image: '' },
   { id: 2, techs: [react, js, git, css], name: 'Projeto 2', image: '' },
   {
     id: 3,

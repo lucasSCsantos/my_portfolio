@@ -14,7 +14,6 @@ export const Container = styled.div`
   position: relative;
 
   & > div:nth-child(2) {
-    /* background-color: blue; */
     display: flex;
 
     flex-wrap: wrap;
@@ -26,12 +25,11 @@ export const Container = styled.div`
 `;
 
 export const ProjectBubblesContainer = styled.div`
-  /* height: 100vh; */
   display: flex;
   position: relative;
-  height: 400px;
+  height: 450px;
   margin: 20px 0;
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -46,27 +44,8 @@ export const MainBubble = styled.div<MainBubbleProps>`
   `}
   position: relative;
   background-size: contain;
-  /* border-radius: 100%; */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.colors.background};
-
-  .ring {
-    border: 1px dashed rgba(255, 255, 255, 0.5);
-    transform: rotate(0);
-    box-shadow: none;
-    display: inline-block;
-    position: absolute;
-  }
-
-  .one {
-    display: inline-block;
-    position: absolute;
-    width: 370px;
-    height: 370px;
-    border-radius: 200px;
-    left: -50px;
-    top: -50px;
-  }
 `;
 
 export const SmartBubble = styled.div<SmartBubbleProps>`
@@ -79,8 +58,9 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
   `}
   position: absolute;
   background-size: contain;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: ${({ theme }) => theme.colors.background};
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
+    inset 4px 4px 20px rgba(250, 250, 250, 0.5);
+  /* background-color: ${({ theme }) => theme.colors.background}; */
   width: 64px;
   height: 64px;
   border-radius: 50px;
