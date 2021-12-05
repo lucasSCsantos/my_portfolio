@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 export type MainBubbleProps = {
   backgroundImage?: string;
-  id?: number;
+  id?: any;
 };
 
 export type SmartBubbleProps = {

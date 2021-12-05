@@ -4,7 +4,7 @@ const generateRandomArr = length => {
   let save;
   let i;
   for (i = arr.length; i; ) {
-    n = Math.round(Math.random() * (i -= 1)) || 0;
+    n = Math.round(Math.random() * (i -= 1));
     save = arr[n];
     arr[n] = arr[i];
     arr[i] = save;

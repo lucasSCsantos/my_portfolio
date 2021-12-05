@@ -4,8 +4,8 @@ import { Container } from './styles';
 function NavigationBars({ arr }) {
   return (
     <Container>
-      {arr.map(({ width, areaName }) => (
-        <Bar width={width} name={areaName} key={width} />
+      {arr.map(({ width, areaName, limit }) => (
+        <Bar width={width} name={areaName} key={width} limit={limit} />
       ))}
     </Container>
   );

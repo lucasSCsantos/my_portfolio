@@ -17,6 +17,7 @@ import git from '../images/git.png';
 import figma from '../images/figma.png';
 import ecommerce from '../images/ecommerce.png';
 import slido from '../images/slido.png';
+import recipesApp from '../images/recipesApp.png';
 
 export default [
   { id: 1, techs: [git, js, html, css], name: 'Projeto 1', image: ecommerce },
@@ -27,6 +28,11 @@ export default [
     name: 'Projeto 3',
     image: ''
   },
-  { id: 4, techs: [css, redux, react, js, git], name: 'Projeto 4', image: '' },
+  {
+    id: 4,
+    techs: [css, redux, react, js, git],
+    name: 'Projeto 4',
+    image: recipesApp
+  },
   { id: 5, techs: [js, express, mysql, node], name: 'Projeto 5', image: '' }
 ];
