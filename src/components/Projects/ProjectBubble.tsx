@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import generateRandomArr from '../../../helpers/generateRandomArr';
 
 import positions from '../../data/positions';
 import { ProjectBubblesContainer, MainBubble, SmartBubble } from './styles';
@@ -6,13 +7,10 @@ import { ProjectBubblesContainer, MainBubble, SmartBubble } from './styles';
 function ProjectBubble({ techs, image }) {
   const [positionsArr, setPositionsArr] = useState([]);
   useEffect(() => {
-    const checkRepeat = arr => {
-      const repeat = arr.some((el, i) => arr.indexOf(el) === i);
-      return repeat;
-    };
     const createPositionsArr = () => {
+      const randomArr = generateRandomArr(techs.length);
       const positionArr = techs.map(
-        () => positions[Math.round(Math.random() * 6)]
+        (_tech, index) => positions[randomArr[index]]
       );
 
       setPositionsArr(positionArr);
