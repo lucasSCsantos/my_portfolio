@@ -1,19 +1,19 @@
-import js from './js.png';
-import ts from './ts.png';
-import css from './css.jpg';
-import html from './html.png';
-import next from './next.png';
-import node from './node.png';
-import express from './express.png';
-import react from './react.png';
-import redux from './redux.png';
-import styledC from './styledC.png';
-import mongo from './mongo.png';
-import mysql from './mysql.png';
-import sequelize from './sequelize.png';
-import github from './github.png';
-import git from './git.png';
-import figma from './figma.png';
+import js from '../images/js.png';
+import ts from '../images/ts.png';
+import css from '../images/css.jpg';
+import html from '../images/html.png';
+import next from '../images/next.png';
+import node from '../images/node.png';
+import express from '../images/express.png';
+import react from '../images/react.png';
+import redux from '../images/redux.png';
+import styledC from '../images/styledC.png';
+import mongo from '../images/mongo.png';
+import mysql from '../images/mysql.png';
+import sequelize from '../images/sequelize.png';
+import github from '../images/github.png';
+import git from '../images/git.png';
+import figma from '../images/figma.png';
 
 export const lenguages = [
   { id: 1, bg: js, name: 'JavaScript', size: 64 },

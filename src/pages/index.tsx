@@ -4,6 +4,7 @@ import ScrollButton from '../components/DefaultComponents/ScrollButton';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
+import projects from '../data/projects';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Projects />
+      <Projects arr={projects} />
     </div>
   );
 }
