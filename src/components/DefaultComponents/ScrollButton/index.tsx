@@ -4,7 +4,7 @@ import { Button, Container } from './styles';
 function ScrollButton() {
   const scroll = () => {
     window.scroll({
-      top: window.scrollY + 973,
+      top: window.scrollY + window.innerHeight,
       left: 0,
       behavior: 'smooth'
     });
