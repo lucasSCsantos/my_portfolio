@@ -20,19 +20,44 @@ import slido from '../images/slido.png';
 import recipesApp from '../images/recipesApp.png';
 
 export default [
-  { id: 1, techs: [git, js, html, css], name: 'Projeto 1', image: ecommerce },
-  { id: 2, techs: [react, js, git, css], name: 'Projeto 2', image: slido },
+  {
+    id: 1,
+    techs: [git, js, html, css],
+    name: 'Loja Online',
+    image: ecommerce,
+    link: '',
+    description: ''
+  },
+  {
+    id: 2,
+    techs: [react, js, git, css],
+    name: 'Clone Slido',
+    image: slido,
+    link: '',
+    description: ''
+  },
   {
     id: 3,
     techs: [react, styledC, git, redux, js],
     name: 'Projeto 3',
-    image: ''
+    image: '',
+    link: '',
+    description: ''
   },
   {
     id: 4,
     techs: [css, redux, react, js, git],
-    name: 'Projeto 4',
-    image: recipesApp
+    name: 'App de receitas',
+    image: recipesApp,
+    link: '',
+    description: ''
   },
-  { id: 5, techs: [js, express, mysql, node], name: 'Projeto 5', image: '' }
+  {
+    id: 5,
+    techs: [js, express, mysql, node],
+    name: 'Api de futebol',
+    image: '',
+    link: '',
+    description: ''
+  }
 ];

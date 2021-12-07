@@ -5,6 +5,7 @@ import { ProjectBubblesContainer, MainBubble, SmartBubble } from './styles';
 
 function ProjectBubble({ techs, image, id }) {
   const [positionsArr, setPositionsArr] = useState([]);
+
   useEffect(() => {
     const createPositionsArr = () => {
       const randomArr = generateRandomArr(Object.values(positions).length);
@@ -16,19 +17,25 @@ function ProjectBubble({ techs, image, id }) {
     };
     createPositionsArr();
   }, []);
+
   return (
     <ProjectBubblesContainer>
       <MainBubble backgroundImage={image} id={id}>
-        {positionsArr.length > 0 &&
-          techs.map((tech, index) => (
-            <SmartBubble
-              backgroundImage={tech}
-              key={tech}
-              origin={positionsArr[index]}
-              float={Math.random() * -8 - 8}
-            />
-          ))}
+        <div className="popover">
+          ABRIR
+          <div className="triangle" />
+        </div>
       </MainBubble>
+      {positionsArr.length > 0 &&
+        techs.map((tech, index) => (
+          <SmartBubble
+            backgroundImage={tech}
+            key={tech}
+            origin={positionsArr[index]}
+            float={Math.random() * -8 - 8}
+            id={id}
+          />
+        ))}
     </ProjectBubblesContainer>
   );
 }

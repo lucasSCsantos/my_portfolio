@@ -14,7 +14,6 @@ function BackgroundBubbles() {
       <div className="bubble bubble9" />
       <div className="bubble bubble10" />
       <div className="bubble bubble11" />
-      <div className="bubble bubble12" />
     </Container>
   );
 }
