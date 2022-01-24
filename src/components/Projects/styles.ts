@@ -40,7 +40,6 @@ export const ProjectBubblesContainer = styled.div`
   height: 40vh;
   margin: 4.8vh 0;
   width: 100%;
-  /* background-color: red; */
 `;
 
 export const MainBubble = styled.div<MainBubbleProps>`
@@ -136,6 +135,12 @@ export const ProjectInfoContainer = styled.div`
   width: 100%;
   height: 40vh;
   margin: 4.8vh 0;
-  padding: 5% 5% 0 40%;
+  padding: 5% 5% 0 35%;
   text-align: end;
+  .vertical-lign {
+    height: 230px;
+    width: 2px;
+    background-color: ${({ theme }) => theme.colors.text};
+    margin: 5% 5% 0 60%;
+  }
 `;

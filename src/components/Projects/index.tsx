@@ -9,7 +9,7 @@ function Projects({ arr }) {
     <Container>
       <Area backgroundColor="transparent" width={45} height="100%">
         {arr.map(({ description, name, id }) => (
-          <ProjectInfo description={description} key={id} name={name} />
+          <ProjectInfo description={description} id={id} key={id} name={name} />
         ))}
       </Area>
       <Area backgroundColor="primary" width={55} height="100%">

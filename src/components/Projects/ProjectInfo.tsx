@@ -1,7 +1,7 @@
 import { Heading, Text } from '../DefaultComponents';
 import { ProjectInfoContainer } from './styles';
 
-function ProjectInfo({ description, name }) {
+function ProjectInfo({ description, name, id }) {
   return (
     <ProjectInfoContainer>
       <Heading level={2} color="text" size="normal">
@@ -10,6 +10,7 @@ function ProjectInfo({ description, name }) {
       <Text size="xsmall" color="text">
         {description}
       </Text>
+      {id < 6 && <div className="vertical-lign" />}
     </ProjectInfoContainer>
   );
 }
