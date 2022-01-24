@@ -18,15 +18,17 @@ import figma from '../images/figma.png';
 import ecommerce from '../images/ecommerce.png';
 import slido from '../images/slido.png';
 import recipesApp from '../images/recipesApp.png';
+import thisPortfolio from '../images/thisPortfolio.png';
 
 export default [
   {
     id: 1,
     techs: [git, js, html, css],
-    name: 'Loja Online',
+    name: 'Portfólio',
     image: ecommerce,
     link: '',
-    description: ''
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
   {
     id: 2,
@@ -34,15 +36,17 @@ export default [
     name: 'Clone Slido',
     image: slido,
     link: '',
-    description: ''
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
   {
     id: 3,
     techs: [react, styledC, git, redux, js],
-    name: 'Projeto 3',
-    image: '',
+    name: 'Loja Online Frontend',
+    image: ecommerce,
     link: '',
-    description: ''
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
   {
     id: 4,
@@ -50,7 +54,8 @@ export default [
     name: 'App de receitas',
     image: recipesApp,
     link: '',
-    description: ''
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
   {
     id: 5,
@@ -58,6 +63,16 @@ export default [
     name: 'Api de futebol',
     image: '',
     link: '',
-    description: ''
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+  },
+  {
+    id: 6,
+    techs: [ts, next, styledC, react, git],
+    name: 'This portfolio',
+    image: thisPortfolio,
+    link: 'https://www.linkedin.com/feed/',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   }
 ];

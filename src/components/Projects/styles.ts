@@ -16,6 +16,12 @@ export const Container = styled.div`
   display: flex;
   position: relative;
 
+  & > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+
   & > div:nth-child(2) {
     display: flex;
     padding-top: 40px;
@@ -31,9 +37,10 @@ export const ProjectBubblesContainer = styled.div`
   z-index: 10;
   display: flex;
   position: relative;
-  height: 300px;
-  margin: 60px 0;
+  height: 40vh;
+  margin: 4vh 0;
   width: 100%;
+  /* background-color: red; */
 `;
 
 export const MainBubble = styled.div<MainBubbleProps>`
@@ -42,8 +49,9 @@ export const MainBubble = styled.div<MainBubbleProps>`
     height: 270px;
     border-radius: 100%;
     background: url(${backgroundImage}) no-repeat;
-    margin-left: ${id % 2 === 0 ? 640 : 120}px;
+    margin-left: ${id % 2 === 0 ? 55 : 20}%;
   `}
+  position: absolute;
   background-size: cover;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
     inset 4px 4px 20px rgba(250, 250, 250, 0.5);
@@ -104,7 +112,7 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
     top: ${origin.t}px;
     transform: translate(0, ${float}px);
     bottom: auto;
-    margin-left: ${id % 2 === 0 ? 640 : 120}px;
+    margin-left: ${id % 2 === 0 ? 55 : 20}%;
     margin-top: 10px;
   `}
   position: absolute;
@@ -121,4 +129,13 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
       transform: translate(0, 0);
     }
   }
+`;
+
+export const ProjectInfoContainer = styled.div`
+  /* background-color: red; */
+  width: 100%;
+  height: 40vh;
+  margin: 4vh 0;
+  padding: 5% 5% 0 40%;
+  text-align: end;
 `;

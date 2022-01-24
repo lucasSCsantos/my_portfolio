@@ -3,7 +3,7 @@ import generateRandomArr from '../../../helpers/generateRandomArr';
 import positions from '../../data/positions';
 import { ProjectBubblesContainer, MainBubble, SmartBubble } from './styles';
 
-function ProjectBubble({ techs, image, id }) {
+function ProjectBubble({ techs, image, id, link }) {
   const [positionsArr, setPositionsArr] = useState([]);
 
   useEffect(() => {
@@ -20,12 +20,14 @@ function ProjectBubble({ techs, image, id }) {
 
   return (
     <ProjectBubblesContainer>
-      <MainBubble backgroundImage={image} id={id}>
-        <div className="popover">
-          ABRIR
-          <div className="triangle" />
-        </div>
-      </MainBubble>
+      <a href={link} target="_blank" rel="noreferrer">
+        <MainBubble backgroundImage={image} id={id}>
+          <div className="popover">
+            ABRIR
+            <div className="triangle" />
+          </div>
+        </MainBubble>
+      </a>
       {positionsArr.length > 0 &&
         techs.map((tech, index) => (
           <SmartBubble
