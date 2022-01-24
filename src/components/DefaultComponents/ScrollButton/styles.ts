@@ -1,11 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+export type ButtonProps = {
+  direction: string;
+};
 
 export const Container = styled.div`
   position: fixed;
+  height: 100%;
   left: 50px;
-  bottom: 50px;
   width: 80px;
-  height: 80px;
   z-index: 20;
 
   @media (max-width: 1440px) {
@@ -44,13 +47,26 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<ButtonProps>`
+  ${({ direction }) => css`
+    ${() =>
+      direction === 'up'
+        ? css`
+            padding-bottom: 10px;
+            margin-top: 5vh;
+            position: fixed;
+          `
+        : css`
+            padding-top: 10px;
+            margin-top: 88vh;
+            position: fixed;
+          `};
+  `}
   cursor: pointer;
-  width: 100%;
+  width: 80px;
+  height: 80px;
   background-color: ${({ theme }) => theme.colors.text};
-  height: 100%;
   border-radius: 100%;
-  padding-top: 10px;
   border: none;
   animation: alternate infinite scrollAnimate 2s ease;
 

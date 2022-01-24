@@ -38,7 +38,7 @@ export const ProjectBubblesContainer = styled.div`
   display: flex;
   position: relative;
   height: 40vh;
-  margin: 4vh 0;
+  margin: 4.8vh 0;
   width: 100%;
   /* background-color: red; */
 `;
@@ -135,7 +135,7 @@ export const ProjectInfoContainer = styled.div`
   /* background-color: red; */
   width: 100%;
   height: 40vh;
-  margin: 4vh 0;
+  margin: 4.8vh 0;
   padding: 5% 5% 0 40%;
   text-align: end;
 `;
