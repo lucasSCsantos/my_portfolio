@@ -3,7 +3,7 @@ import { ProjectInfoContainer } from './styles';
 
 function ProjectInfo({ description, name, id }) {
   return (
-    <ProjectInfoContainer>
+    <ProjectInfoContainer id={id}>
       <Heading level={2} color="text" size="normal">
         {name}
       </Heading>

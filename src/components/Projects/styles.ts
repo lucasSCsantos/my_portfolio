@@ -7,8 +7,12 @@ export type MainBubbleProps = {
 
 export type SmartBubbleProps = {
   backgroundImage?: string;
-  origin?: { l: number; t: number };
+  origin?: { l: number; t: number; ls: number; ts: number };
   float: number;
+  id?: any;
+};
+
+export type ProjectInfoProps = {
   id?: any;
 };
 
@@ -31,6 +35,29 @@ export const Container = styled.div`
       ${({ theme }) => theme.colors.secondary}
     );
   }
+  @media (max-width: 1440px) {
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 834px) {
+    & > div:nth-child(2) {
+      width: 100%;
+      position: absolute;
+      background-color: transparent;
+      background-image: none;
+      z-index: 30;
+    }
+    & > div:first-child {
+      z-index: 20;
+      width: 100%;
+      background-image: linear-gradient(
+        ${({ theme }) => theme.colors.primary},
+        ${({ theme }) => theme.colors.secondary}
+      );
+    }
+  }
+  @media (max-width: 428px) {
+  }
 `;
 
 export const ProjectBubblesContainer = styled.div`
@@ -40,6 +67,11 @@ export const ProjectBubblesContainer = styled.div`
   height: 40vh;
   margin: 4.8vh 0;
   width: 100%;
+  @media (max-width: 834px) {
+    height: 20vh;
+  }
+  @media (max-width: 428px) {
+  }
 `;
 
 export const MainBubble = styled.div<MainBubbleProps>`
@@ -57,7 +89,9 @@ export const MainBubble = styled.div<MainBubbleProps>`
       margin-left: ${id % 2 === 0 ? 35 : 18}%;
     }
     @media (max-width: 834px) {
-      margin-left: 18%;
+      width: 200px;
+      height: 200px;
+      margin-left: ${id % 2 === 0 ? 65 : 18}%;
     }
     @media (max-width: 428px) {
     }
@@ -135,7 +169,10 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
       margin-left: ${id % 2 === 0 ? 35 : 20}%;
     }
     @media (max-width: 834px) {
-      margin-left: 20%;
+      margin-left: ${id % 2 === 0 ? 62 : 15}%;
+      left: ${origin.ls}px;
+      top: ${origin.ts}px;
+      margin-top: -10px;
     }
     @media (max-width: 428px) {
     }
@@ -156,8 +193,35 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
   }
 `;
 
-export const ProjectInfoContainer = styled.div`
-  /* background-color: red; */
+export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
+  ${({ id }) => css`
+    @media (max-width: 1440px) {
+    }
+    @media (max-width: 1024px) {
+    }
+    @media (max-width: 834px) {
+      margin-left: ${id % 2 === 0 ? 15 : 55}%;
+      margin-top: 8vh;
+      padding: 0;
+      text-align: left;
+      /* background-color: red; */
+      width: 40%;
+      height: 18vh;
+      h2,
+      p {
+        color: ${({ theme }) => theme.colors.textLight};
+        text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+      }
+      h2 {
+        font-size: 180%;
+      }
+      p {
+        font-size: 100%;
+      }
+    }
+    @media (max-width: 428px) {
+    }
+  `}
   width: 100%;
   height: 40vh;
   margin: 4.8vh 0;
@@ -180,6 +244,9 @@ export const ProjectInfoContainer = styled.div`
     }
   }
   @media (max-width: 834px) {
+    .vertical-lign {
+      display: none;
+    }
   }
   @media (max-width: 428px) {
   }
