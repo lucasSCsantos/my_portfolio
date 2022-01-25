@@ -49,6 +49,18 @@ export const MainBubble = styled.div<MainBubbleProps>`
     border-radius: 100%;
     background: url(${backgroundImage}) no-repeat;
     margin-left: ${id % 2 === 0 ? 55 : 20}%;
+
+    @media (max-width: 1440px) {
+      margin-left: ${id % 2 === 0 ? 38 : 13}%;
+    }
+    @media (max-width: 1024px) {
+      margin-left: ${id % 2 === 0 ? 35 : 18}%;
+    }
+    @media (max-width: 834px) {
+      margin-left: 18%;
+    }
+    @media (max-width: 428px) {
+    }
   `}
   position: absolute;
   background-size: cover;
@@ -113,6 +125,20 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
     bottom: auto;
     margin-left: ${id % 2 === 0 ? 55 : 20}%;
     margin-top: 10px;
+
+    @media (max-width: 1440px) {
+      width: 48px;
+      height: 48px;
+      margin-left: ${id % 2 === 0 ? 40 : 15}%;
+    }
+    @media (max-width: 1024px) {
+      margin-left: ${id % 2 === 0 ? 35 : 20}%;
+    }
+    @media (max-width: 834px) {
+      margin-left: 20%;
+    }
+    @media (max-width: 428px) {
+    }
   `}
   position: absolute;
   background-size: contain;
@@ -142,5 +168,19 @@ export const ProjectInfoContainer = styled.div`
     width: 2px;
     background-color: ${({ theme }) => theme.colors.text};
     margin: 5% 5% 0 60%;
+  }
+  @media (max-width: 1440px) {
+    .vertical-lign {
+      height: 220px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .vertical-lign {
+      height: 320px;
+    }
+  }
+  @media (max-width: 834px) {
+  }
+  @media (max-width: 428px) {
   }
 `;
