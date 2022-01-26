@@ -45,10 +45,10 @@ export const Container = styled.div`
       position: absolute;
       background-color: transparent;
       background-image: none;
-      z-index: 30;
+      z-index: 2;
     }
     & > div:first-child {
-      z-index: 20;
+      z-index: 1;
       width: 100%;
       background-image: linear-gradient(
         ${({ theme }) => theme.colors.primary},
@@ -91,7 +91,7 @@ export const MainBubble = styled.div<MainBubbleProps>`
     @media (max-width: 834px) {
       width: 200px;
       height: 200px;
-      margin-left: ${id % 2 === 0 ? 65 : 18}%;
+      margin-left: ${id % 2 === 0 ? 65 : 12}%;
     }
     @media (max-width: 428px) {
     }
@@ -169,7 +169,7 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
       margin-left: ${id % 2 === 0 ? 35 : 20}%;
     }
     @media (max-width: 834px) {
-      margin-left: ${id % 2 === 0 ? 62 : 15}%;
+      margin-left: ${id % 2 === 0 ? 62 : 9}%;
       left: ${origin.ls}px;
       top: ${origin.ts}px;
       margin-top: -10px;
@@ -200,23 +200,24 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
     @media (max-width: 1024px) {
     }
     @media (max-width: 834px) {
-      margin-left: ${id % 2 === 0 ? 15 : 55}%;
+      margin-left: ${id % 2 === 0 ? 10 : 55}%;
       margin-top: 8vh;
       padding: 0;
       text-align: left;
       /* background-color: red; */
       width: 40%;
-      height: 18vh;
+      height: 25vh;
       h2,
       p {
         color: ${({ theme }) => theme.colors.textLight};
         text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
       }
       h2 {
-        font-size: 180%;
+        font-size: 200%;
       }
       p {
-        font-size: 100%;
+        font-weight: 200;
+        font-size: 120%;
       }
     }
     @media (max-width: 428px) {
