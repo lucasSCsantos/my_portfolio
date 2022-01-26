@@ -52,10 +52,10 @@ export const Container = styled.div`
       position: absolute;
       background-color: transparent;
       background-image: none;
-      z-index: 2;
+      z-index: 1;
     }
     & > div:first-child {
-      z-index: 1;
+      z-index: 0;
       width: 100%;
       background-image: linear-gradient(
         ${({ theme }) => theme.colors.primary},
@@ -64,14 +64,6 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 428px) {
-    & > div:first-child {
-      z-index: 1;
-      width: 100%;
-      background-image: linear-gradient(
-        ${({ theme }) => theme.colors.primary},
-        ${({ theme }) => theme.colors.secondary}
-      );
-    }
   }
 `;
 
@@ -101,17 +93,17 @@ export const MainBubble = styled.div<MainBubbleProps>`
       margin-left: ${id % 2 === 0 ? 38 : 13}%;
     }
     @media (max-width: 1024px) {
-      margin-left: ${id % 2 === 0 ? 35 : 18}%;
+      margin-left: ${id % 2 === 0 ? 30 : 18}%;
     }
     @media (max-width: 834px) {
       width: 200px;
       height: 200px;
-      margin-left: ${id % 2 === 0 ? 63 : 12}%;
+      margin-left: ${id % 2 === 0 ? 63 : 16}%;
     }
     @media (max-width: 428px) {
       width: 100px;
       height: 100px;
-      margin-left: ${id % 2 === 0 ? 60 : 20}%;
+      margin-left: ${id % 2 === 0 ? 60 : 16}%;
     }
   `}
   position: absolute;
@@ -179,21 +171,23 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
     margin-top: 10px;
 
     @media (max-width: 1440px) {
-      width: 48px;
-      height: 48px;
+      width: 54px;
+      height: 54px;
       margin-left: ${id % 2 === 0 ? 40 : 15}%;
     }
     @media (max-width: 1024px) {
-      margin-left: ${id % 2 === 0 ? 35 : 20}%;
+      width: 54px;
+      height: 54px;
+      margin-left: ${id % 2 === 0 ? 30 : 20}%;
     }
     @media (max-width: 834px) {
-      margin-left: ${id % 2 === 0 ? 59 : 9}%;
+      margin-left: ${id % 2 === 0 ? 59 : 12}%;
       left: ${origin.ls}px;
       top: ${origin.ts}px;
       margin-top: -10px;
     }
     @media (max-width: 428px) {
-      margin-left: ${id % 2 === 0 ? 45 : 5}%;
+      margin-left: ${id % 2 === 0 ? 43 : 0}%;
       left: ${origin.lx}px;
       top: ${origin.tx}px;
       width: 32px;
@@ -224,7 +218,7 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
     @media (max-width: 1024px) {
     }
     @media (max-width: 834px) {
-      margin-left: ${id % 2 === 0 ? 10 : 65}%;
+      margin-left: ${id % 2 === 0 ? 10 : 60}%;
       margin-top: 8vh;
       padding: 0;
       text-align: left;
@@ -247,7 +241,7 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
     @media (max-width: 428px) {
       margin-top: 4vh;
       height: 20vh;
-      margin-left: ${id % 2 === 0 ? 15 : 60}%;
+      margin-left: ${id % 2 === 0 ? 14 : 60}%;
       h2 {
         font-size: 120%;
       }

@@ -1,12 +1,8 @@
 import { Container } from './styles';
 
 interface BackgroundBubblesProps {
-  size?: number;
+  size: number;
 }
-
-const defaultProps = {
-  size: 100
-};
 
 function BackgroundBubbles({ size }: BackgroundBubblesProps) {
   return (
@@ -25,7 +21,5 @@ function BackgroundBubbles({ size }: BackgroundBubblesProps) {
     </Container>
   );
 }
-
-BackgroundBubbles.defaultProps = defaultProps;
 
 export default BackgroundBubbles;

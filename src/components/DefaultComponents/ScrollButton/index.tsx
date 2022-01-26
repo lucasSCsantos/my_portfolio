@@ -32,7 +32,7 @@ function ScrollButton() {
 
   return (
     <Container>
-      {scrollTop >= 900 && (
+      {(scrollTop >= 878 || scrollTop >= 973) && (
         <Button type="button" onClick={scrollUp} direction="up">
           <BsChevronUp size={60} fontWeight={100} color="white" />
         </Button>

@@ -17,7 +17,7 @@ export const Container = styled.div<ContainerProps>`
     border-radius: 100%;
     position: absolute;
     background-color: white;
-    bottom: -30px;
+    bottom: 0px;
     opacity: 0.2;
     animation: bubble 15s ease-in-out infinite,
       sideWays 4s ease-in-out infinite alternate;
