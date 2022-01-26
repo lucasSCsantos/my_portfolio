@@ -18,10 +18,10 @@ export const Container = styled.div`
   @media (max-width: 834px) {
     width: 60px;
     bottom: 20px;
-    left: 47%;
+    left: 0;
     right: 47%;
-    height: 60px;
-
+    height: 80px;
+    width: 100%;
     button {
       svg {
         margin-top: -4px;
@@ -55,11 +55,25 @@ export const Button = styled.button<ButtonProps>`
             padding-bottom: 10px;
             margin-top: 5vh;
             position: fixed;
+            @media (max-width: 834px) {
+              display: none;
+            }
           `
         : css`
             padding-top: 10px;
             margin-top: 88vh;
             position: fixed;
+            @media (max-width: 834px) {
+              margin-top: 0;
+              padding-bottom: 0;
+              margin-left: 46%;
+            }
+            @media (max-width: 428px) {
+              margin-left: 0;
+              margin-top: -30px;
+              width: 50px;
+              height: 50px;
+            }
           `};
   `}
   cursor: pointer;

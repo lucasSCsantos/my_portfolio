@@ -7,7 +7,14 @@ export type MainBubbleProps = {
 
 export type SmartBubbleProps = {
   backgroundImage?: string;
-  origin?: { l: number; t: number; ls: number; ts: number };
+  origin?: {
+    l: number;
+    t: number;
+    ls: number;
+    ts: number;
+    lx: number;
+    tx: number;
+  };
   float: number;
   id?: any;
 };
@@ -57,6 +64,14 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 428px) {
+    & > div:first-child {
+      z-index: 1;
+      width: 100%;
+      background-image: linear-gradient(
+        ${({ theme }) => theme.colors.primary},
+        ${({ theme }) => theme.colors.secondary}
+      );
+    }
   }
 `;
 
@@ -91,9 +106,12 @@ export const MainBubble = styled.div<MainBubbleProps>`
     @media (max-width: 834px) {
       width: 200px;
       height: 200px;
-      margin-left: ${id % 2 === 0 ? 65 : 12}%;
+      margin-left: ${id % 2 === 0 ? 63 : 12}%;
     }
     @media (max-width: 428px) {
+      width: 100px;
+      height: 100px;
+      margin-left: ${id % 2 === 0 ? 60 : 20}%;
     }
   `}
   position: absolute;
@@ -169,12 +187,18 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
       margin-left: ${id % 2 === 0 ? 35 : 20}%;
     }
     @media (max-width: 834px) {
-      margin-left: ${id % 2 === 0 ? 62 : 9}%;
+      margin-left: ${id % 2 === 0 ? 59 : 9}%;
       left: ${origin.ls}px;
       top: ${origin.ts}px;
       margin-top: -10px;
     }
     @media (max-width: 428px) {
+      margin-left: ${id % 2 === 0 ? 45 : 5}%;
+      left: ${origin.lx}px;
+      top: ${origin.tx}px;
+      width: 32px;
+      height: 32px;
+      margin-top: -60px;
     }
   `}
   position: absolute;
@@ -200,12 +224,12 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
     @media (max-width: 1024px) {
     }
     @media (max-width: 834px) {
-      margin-left: ${id % 2 === 0 ? 10 : 55}%;
+      margin-left: ${id % 2 === 0 ? 10 : 65}%;
       margin-top: 8vh;
       padding: 0;
       text-align: left;
       /* background-color: red; */
-      width: 40%;
+      width: 35%;
       height: 25vh;
       h2,
       p {
@@ -221,6 +245,16 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
       }
     }
     @media (max-width: 428px) {
+      margin-top: 4vh;
+      height: 20vh;
+      margin-left: ${id % 2 === 0 ? 15 : 60}%;
+      h2 {
+        font-size: 120%;
+      }
+      p {
+        font-weight: 200;
+        font-size: 80%;
+      }
     }
   `}
   width: 100%;
