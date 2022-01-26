@@ -16,6 +16,8 @@ import github from '../images/github.png';
 import git from '../images/git.png';
 import figma from '../images/figma.png';
 import ecommerce from '../images/ecommerce.png';
+import apiSoccer from '../images/apiSoccer.png';
+import portfolio from '../images/portfolio.png';
 import slido from '../images/slido.png';
 import recipesApp from '../images/recipesApp.png';
 import thisPortfolio from '../images/thisPortfolio.png';
@@ -25,8 +27,8 @@ export default [
     id: 1,
     techs: [git, js, html, css],
     name: 'Portfólio',
-    image: ecommerce,
-    link: '',
+    image: portfolio,
+    link: 'https://lucasscsantos.github.io/',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
@@ -35,7 +37,7 @@ export default [
     techs: [react, js, git, css],
     name: 'Clone Slido',
     image: slido,
-    link: '',
+    link: 'https://slido-clone.herokuapp.com/',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
@@ -44,7 +46,7 @@ export default [
     techs: [react, styledC, git, redux, js],
     name: 'Loja Online Frontend',
     image: ecommerce,
-    link: '',
+    link: 'https://frontend-web-store.netlify.app/',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
@@ -53,7 +55,7 @@ export default [
     techs: [css, redux, react, js, git],
     name: 'App de receitas',
     image: recipesApp,
-    link: '',
+    link: 'https://appalmirinha.herokuapp.com/',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
@@ -61,8 +63,8 @@ export default [
     id: 5,
     techs: [js, express, mysql, node],
     name: 'Api de futebol',
-    image: '',
-    link: '',
+    image: apiSoccer,
+    link: 'https://github.com/lucasSCsantos/msc_soccer_teams',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
@@ -71,7 +73,7 @@ export default [
     techs: [ts, next, styledC, react, git],
     name: 'This portfolio',
     image: thisPortfolio,
-    link: 'https://www.linkedin.com/feed/',
+    link: '',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   }
