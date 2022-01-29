@@ -31,6 +31,9 @@ export const Container = styled.div`
   }
   @media (max-width: 428px) {
     top: 40%;
+    .actual {
+      width: 2rem;
+    }
   }
 `;
 
@@ -94,5 +97,6 @@ export const BarContainer = styled.div`
     height: 0.5rem;
   }
   @media (max-width: 428px) {
+    width: 1.2rem;
   }
 `;

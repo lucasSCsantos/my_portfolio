@@ -36,7 +36,6 @@ export const Container = styled.div`
     height: 40px;
     left: 45%;
     right: 45%;
-
     button {
       svg {
         margin-top: -4px;

@@ -103,7 +103,7 @@ export const MainBubble = styled.div<MainBubbleProps>`
     @media (max-width: 428px) {
       width: 100px;
       height: 100px;
-      margin-left: ${id % 2 === 0 ? 60 : 16}%;
+      margin-left: ${id % 2 === 0 ? 57 : 13}%;
     }
   `}
   position: absolute;
@@ -187,7 +187,7 @@ export const SmartBubble = styled.div<SmartBubbleProps>`
       margin-top: -10px;
     }
     @media (max-width: 428px) {
-      margin-left: ${id % 2 === 0 ? 43 : 0}%;
+      margin-left: ${id % 2 === 0 ? 38 : -5}%;
       left: ${origin.lx}px;
       top: ${origin.tx}px;
       width: 32px;
@@ -241,7 +241,8 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
     @media (max-width: 428px) {
       margin-top: 4vh;
       height: 20vh;
-      margin-left: ${id % 2 === 0 ? 14 : 60}%;
+      /* width: 32%; */
+      margin-left: ${id % 2 === 0 ? 10 : 60}%;
       h2 {
         font-size: 120%;
       }
