@@ -18,7 +18,7 @@ function About() {
         </Heading>
         <SkillsArea />
       </Area>
-      <BackgroundBubbles size={90} />
+      <BackgroundBubbles size={80} />
     </Container>
   );
 }
