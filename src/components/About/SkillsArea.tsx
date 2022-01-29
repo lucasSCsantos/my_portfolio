@@ -1,6 +1,6 @@
 import SkillArea from './SkillArea';
 import { SkillsContainer } from './styles';
-import { databases, frameworks, lenguages, others } from '../../images';
+import { databases, frameworks, lenguages, others } from '../../data/skills';
 
 function SkillsArea() {
   return (

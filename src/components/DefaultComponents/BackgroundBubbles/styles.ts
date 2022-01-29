@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
+export type ContainerProps = {
+  size?: number;
+};
 // eslint-disable-next-line import/prefer-default-export
-export const Container = styled.div`
+export const Container = styled.div<ContainerProps>`
   position: absolute;
   width: 55%;
   right: 0;
@@ -14,7 +17,7 @@ export const Container = styled.div`
     border-radius: 100%;
     position: absolute;
     background-color: white;
-    bottom: -30px;
+    bottom: 0px;
     opacity: 0.2;
     animation: bubble 15s ease-in-out infinite,
       sideWays 4s ease-in-out infinite alternate;
@@ -30,7 +33,7 @@ export const Container = styled.div`
       opacity: 0.06;
     }
     100% {
-      transform: translateY(-90vh);
+      transform: ${props => `translateY(-${props.size}vh)`};
     }
   }
 

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { BarContainer } from './styles';
 
-function Bar({ width, name }) {
+function Bar({ width, name, limit }) {
   const [scrollTop, setScrollTop] = useState(0);
   const [className, setClassName] = useState('');
 
@@ -11,7 +11,8 @@ function Bar({ width, name }) {
       setScrollTop(e.target.documentElement.scrollTop);
     };
     window.addEventListener('scroll', onScroll);
-    return scrollTop <= width && scrollTop >= width - 970
+    return (scrollTop <= width || scrollTop <= limit) &&
+      scrollTop >= width - 970
       ? setClassName('actual')
       : setClassName('');
   }, [scrollTop]);

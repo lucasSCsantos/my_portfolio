@@ -1,8 +1,12 @@
 import { Container } from './styles';
 
-function BackgroundBubbles() {
+interface BackgroundBubblesProps {
+  size: number;
+}
+
+function BackgroundBubbles({ size }: BackgroundBubblesProps) {
   return (
-    <Container>
+    <Container size={size}>
       <div className="bubble bubble1" />
       <div className="bubble bubble2" />
       <div className="bubble bubble3" />
@@ -14,7 +18,6 @@ function BackgroundBubbles() {
       <div className="bubble bubble9" />
       <div className="bubble bubble10" />
       <div className="bubble bubble11" />
-      <div className="bubble bubble12" />
     </Container>
   );
 }
