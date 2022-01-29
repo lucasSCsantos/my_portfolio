@@ -1,4 +1,5 @@
 import About from '../components/About';
+import Contact from '../components/Contact';
 import NavigationBars from '../components/DefaultComponents/NavigationBars';
 import ScrollButton from '../components/DefaultComponents/ScrollButton';
 import Header from '../components/Header';
@@ -24,6 +25,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects arr={projects} />
+      <Contact />
     </div>
   );
 }

@@ -17,6 +17,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    background-image: linear-gradient(
+      ${({ theme }) => theme.colors.primary},
+      ${({ theme }) => theme.colors.secondary}
+    );
 
     h1 {
       text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);

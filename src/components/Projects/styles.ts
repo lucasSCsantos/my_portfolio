@@ -38,8 +38,8 @@ export const Container = styled.div`
     padding-top: 40px;
     flex-wrap: wrap;
     background-image: linear-gradient(
-      ${({ theme }) => theme.colors.primary},
-      ${({ theme }) => theme.colors.secondary}
+      ${({ theme }) => theme.colors.secondary},
+      ${({ theme }) => theme.colors.tertiary}
     );
   }
   @media (max-width: 1440px) {
