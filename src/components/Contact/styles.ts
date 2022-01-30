@@ -22,3 +22,28 @@ export const Container = styled.div`
     );
   }
 `;
+
+export const ContactFormsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 75%;
+  height: 60%;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: -10rem;
+`;
+
+export const IconsContainer = styled.div`
+  /* background-color: blue; */
+  width: 20%;
+  height: 50%;
+  font-size: 3.5rem;
+  text-align: right;
+  svg {
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+  }
+`;
+
+export const ContactInfoContainer = styled.div``;
