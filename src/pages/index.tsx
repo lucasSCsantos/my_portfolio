@@ -17,8 +17,12 @@ export default function Home() {
             width: 970 / 2 + 970,
             areaName: 'Sobre Mim'
           },
-          { width: 970 / 2 + 970 * 2, areaName: 'Projetos', limit: 970 * 4 },
-          { width: 970 * 5, areaName: 'Contato', limit: 0 }
+          {
+            width: 970 / 2 + 970 * 2,
+            areaName: 'Projetos',
+            limit: 970 * 4 + 970 / 2
+          },
+          { width: 970 * 5 + 970 / 2, areaName: 'Contato', limit: 0 }
         ]}
       />
       <ScrollButton />
