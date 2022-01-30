@@ -28,6 +28,7 @@ function ScrollButton() {
       setScrollTop(e.target.documentElement.scrollTop);
     };
     window.addEventListener('scroll', onScroll);
+    console.log(scrollTop);
   }, [scrollTop]);
 
   return (
@@ -37,9 +38,11 @@ function ScrollButton() {
           <BsChevronUp size={60} fontWeight={100} color="white" />
         </Button>
       )}
-      <Button type="button" onClick={scrollDown} direction="down">
-        <BsChevronDown size={60} fontWeight={100} color="white" />
-      </Button>
+      {scrollTop < 4686 && (
+        <Button type="button" onClick={scrollDown} direction="down">
+          <BsChevronDown size={60} fontWeight={100} color="white" />
+        </Button>
+      )}
     </Container>
   );
 }
