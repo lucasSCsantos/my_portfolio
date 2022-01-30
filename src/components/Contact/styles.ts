@@ -46,4 +46,12 @@ export const IconsContainer = styled.div`
   }
 `;
 
-export const ContactInfoContainer = styled.div``;
+export const ContactInfoContainer = styled.div`
+  margin-top: -12.2rem;
+  /* background-color: red; */
+  margin-left: 0.5rem;
+
+  h1 {
+    margin-bottom: -0.5rem;
+  }
+`;

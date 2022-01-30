@@ -12,10 +12,10 @@ function ContactForms() {
       <IconsContainer>
         <SiGmail />
         <br />
-        <SiLinkedin />
-        <SiGithub />
         <SiWhatsapp />
         <IoCallSharp />
+        <SiLinkedin />
+        <SiGithub />
       </IconsContainer>
     </ContactFormsContainer>
   );
