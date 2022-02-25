@@ -82,7 +82,7 @@ export const IconsContainer = styled.div`
     font-size: 0;
     height: fit-content;
     color: white;
-    min-width: 80px !important;
+    min-width: 80px;
     /* background-color: red; */
     svg {
       margin: 0 0.5rem;
@@ -90,13 +90,16 @@ export const IconsContainer = styled.div`
     }
   }
   @media (max-width: 428px) {
-    font-size: 1rem;
+    min-width: 50px;
+    svg {
+      margin: 0 0.1rem;
+      margin-bottom: 1.2rem;
+    }
   }
 `;
 
 export const ContactInfoContainer = styled.div`
   margin-top: -12.2rem;
-  /* background-color: red; */
   margin-left: 0.5rem;
 
   h1 {
@@ -107,12 +110,18 @@ export const ContactInfoContainer = styled.div`
 export const MobileContainer = styled.div`
   height: 100%;
   padding: 81px 61px;
-  /* background-color: red; */
   width: 100%;
 
   h1 {
     margin: 0 !important;
     font-size: 4.5rem;
+  }
+  @media (max-width: 428px) {
+    padding: 61px 41px;
+    h1 {
+      font-size: 3rem;
+      line-height: 60px !important;
+    }
   }
 `;
 
@@ -125,5 +134,12 @@ export const MobileContactInfo = styled.div`
     text-align: left;
     margin-bottom: 10px;
     margin-left: 20px;
+  }
+  @media (max-width: 428px) {
+    div p {
+      margin-left: 2px;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
   }
 `;

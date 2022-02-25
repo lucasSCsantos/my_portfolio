@@ -6,7 +6,7 @@ import { IconsContainer, MobileContactInfo, MobileContainer } from './styles';
 
 function MobileContact() {
   const breakpoint = useMediaQuery(428);
-  const iconSize = breakpoint ? 30 : 45;
+  const iconSize = breakpoint ? 20 : 45;
 
   return (
     <MobileContainer>
@@ -29,10 +29,10 @@ function MobileContact() {
           <SiGithub size={iconSize} />
         </IconsContainer>
         <div>
-          <Text size="xlarge" color="textLight">
+          <Text size="large" color="textLight">
             luc.cristovam10@gmail.com
           </Text>
-          <Text size="xlarge" color="textLight">
+          <Text size="large" color="textLight">
             (71) 98184-9630
           </Text>
         </div>
