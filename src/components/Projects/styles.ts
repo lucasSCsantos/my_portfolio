@@ -58,8 +58,8 @@ export const Container = styled.div`
       z-index: 0;
       width: 100%;
       background-image: linear-gradient(
-        ${({ theme }) => theme.colors.primary},
-        ${({ theme }) => theme.colors.secondary}
+        ${({ theme }) => theme.colors.secondary},
+        ${({ theme }) => theme.colors.tertiary}
       );
     }
   }

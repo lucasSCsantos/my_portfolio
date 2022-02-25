@@ -21,6 +21,7 @@ import portfolio from '../images/portfolio.png';
 import slido from '../images/slido.png';
 import recipesApp from '../images/recipesApp.png';
 import thisPortfolio from '../images/thisPortfolio.png';
+import eatFlavor from '../images/eatFlavor.png';
 
 export default [
   {
@@ -70,10 +71,10 @@ export default [
   },
   {
     id: 6,
-    techs: [ts, next, styledC, react, git],
-    name: 'This portfolio',
-    image: thisPortfolio,
-    link: '',
+    techs: [ts, react, node, mongo],
+    name: 'Eat Flavor',
+    image: eatFlavor,
+    link: 'https://eatflavor-fd.herokuapp.com/',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   }

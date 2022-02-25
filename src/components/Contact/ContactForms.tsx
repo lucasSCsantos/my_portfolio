@@ -14,6 +14,7 @@ function ContactForms() {
         <br />
         <SiWhatsapp />
         <IoCallSharp />
+        <br />
         <SiLinkedin />
         <SiGithub />
       </IconsContainer>

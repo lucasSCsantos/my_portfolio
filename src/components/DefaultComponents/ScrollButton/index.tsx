@@ -20,7 +20,6 @@ function ScrollButton() {
       left: 0,
       behavior: 'smooth'
     });
-    console.log(window.innerHeight);
   };
 
   useEffect(() => {
@@ -28,7 +27,6 @@ function ScrollButton() {
       setScrollTop(e.target.documentElement.scrollTop);
     };
     window.addEventListener('scroll', onScroll);
-    console.log(scrollTop);
   }, [scrollTop]);
 
   return (

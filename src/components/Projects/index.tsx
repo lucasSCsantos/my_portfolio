@@ -23,7 +23,7 @@ function Projects({ arr }) {
           />
         ))}
       </Area>
-      <BackgroundBubbles size={293} />
+      <BackgroundBubbles size={590} />
     </Container>
   );
 }
