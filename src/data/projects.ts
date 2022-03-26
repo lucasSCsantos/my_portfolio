@@ -25,15 +25,18 @@ import thisPortfolio from '../images/thisPortfolio.png';
 import eatFlavor from '../images/eatFlavor.png';
 import mocha from '../images/mocha.png';
 import pokedex from '../images/pokedex.jpg';
+import supabase from '../images/supabase.png';
+import torcida from '../images/torcida.png';
 
 export default [
   {
     id: 1,
-    techs: [git, js, html, css],
-    name: 'Portfólio',
-    image: portfolio,
-    link: 'https://lucasscsantos.github.io/',
-    description: 'Feio'
+    techs: [git, next, supabase, css, js],
+    name: 'Torcida Imperial',
+    image: torcida,
+    link: 'https://www.torcidaimperial.com/',
+    description:
+      'Um centro para a torcida da equipe Imperial foi criado por mim junto a uma equipe de outros desenvolvedores e torcedores'
   },
   {
     id: 2,
@@ -42,7 +45,7 @@ export default [
     image: slido,
     link: 'https://slido-clone.herokuapp.com/',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+      'Este projeto foi feito para a prática de css e animações com funcionalidades simples, simulando a plataforma slido'
   },
   {
     id: 3,
@@ -51,7 +54,7 @@ export default [
     image: ecommerce,
     link: 'https://frontend-web-store.netlify.app/',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+      'Loja online front-end feita para praticar diferentes tecnologias, junto da lógica para as funcionalidades básicas de um e-commerce'
   },
   {
     id: 4,
@@ -60,7 +63,7 @@ export default [
     image: recipesApp,
     link: 'https://appalmirinha.herokuapp.com/',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+      'Projeto feito em equipe para encerrar os estudos de react do curso da Trybe e também metodologias de trabalho em grupo.'
   },
   {
     id: 5,
@@ -69,7 +72,7 @@ export default [
     image: pokedex,
     link: 'https://github.com/lucasSCsantos/pokedexApp',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+      'Um pequeno app de Pokedex para iniciar o estudo de desenvolvimento mobile'
   },
   {
     id: 6,
@@ -78,6 +81,6 @@ export default [
     image: eatFlavor,
     link: 'https://eatflavor-fd.herokuapp.com/',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+      'Sistema de delivery full-stack com prática de TDD, para desenvolver um projeto desde o banco de dados até a interface do usuario'
   }
 ];

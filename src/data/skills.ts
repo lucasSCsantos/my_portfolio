@@ -11,6 +11,7 @@ import redux from '../images/redux.png';
 import styledC from '../images/styledC.png';
 import mongo from '../images/mongo.png';
 import mysql from '../images/mysql.png';
+import supabase from '../images/supabase.png';
 import sequelize from '../images/sequelize.png';
 import github from '../images/github.png';
 import git from '../images/git.png';
@@ -36,7 +37,8 @@ export const frameworks = [
 export const databases = [
   { id: 1, bg: sequelize, name: 'Sequelize', size: 48 },
   { id: 2, bg: mongo, name: 'MongoDB', size: 56 },
-  { id: 3, bg: mysql, name: 'MySQL', size: 64 }
+  { id: 3, bg: mysql, name: 'MySQL', size: 64 },
+  { id: 4, bg: supabase, name: 'Supabase', size: 48 }
 ];
 
 export const others = [
