@@ -33,8 +33,7 @@ export default [
     name: 'Portfólio',
     image: portfolio,
     link: 'https://lucasscsantos.github.io/',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+    description: 'Feio'
   },
   {
     id: 2,
