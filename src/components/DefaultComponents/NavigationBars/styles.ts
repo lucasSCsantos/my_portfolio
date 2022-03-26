@@ -24,6 +24,7 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 834px) {
+    display: none;
     top: 45%;
     .actual {
       width: 3.25rem;

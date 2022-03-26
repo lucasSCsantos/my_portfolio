@@ -29,7 +29,7 @@ export default function Home() {
             areaName: 'Projetos',
             limit: 970 * 4 + 970 / 2
           },
-          { width: 970 * 5 + 970 / 2, areaName: 'Contato', limit: 0 }
+          { width: 970 * 5 + 970 / 2, areaName: 'Contato' }
         ]}
       />
       <ScrollButton />
