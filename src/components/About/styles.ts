@@ -13,6 +13,10 @@ export const Container = styled.div`
   display: flex;
   position: relative;
 
+  & > div:nth-child(1) {
+    z-index: 50;
+  }
+
   & > div:nth-child(2) {
     align-items: center;
     justify-content: space-evenly;

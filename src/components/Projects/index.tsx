@@ -1,5 +1,6 @@
 import { Area } from '../DefaultComponents';
 import BackgroundBubbles from '../DefaultComponents/BackgroundBubbles';
+import BackgroundAnimals from './BackgroundAnimals';
 import ProjectBubble from './ProjectBubble';
 import ProjectInfo from './ProjectInfo';
 import { Container } from './styles';
@@ -13,6 +14,7 @@ function Projects({ arr }) {
         ))}
       </Area>
       <Area backgroundColor="primary" width={55} height="100%">
+        <BackgroundAnimals />
         {arr.map(({ techs, image, id, link }) => (
           <ProjectBubble
             techs={techs}

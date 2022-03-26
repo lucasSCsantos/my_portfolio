@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import NavigationBars from '../components/DefaultComponents/NavigationBars';
@@ -6,8 +8,13 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import projects from '../data/projects';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
+
   return (
     <div>
       <NavigationBars

@@ -12,9 +12,12 @@ function Contact() {
   return (
     <Container>
       {breakpoint ? (
-        <Area backgroundColor="transparent" width={100} height="100%">
-          <MobileContact />
-        </Area>
+        <>
+          <Area backgroundColor="transparent" width={100} height="100%">
+            <MobileContact />
+          </Area>
+          <BackgroundBubbles size={90} />
+        </>
       ) : (
         <>
           <Area backgroundColor="transparent" width={45} height="100%">
@@ -23,9 +26,9 @@ function Contact() {
           <Area backgroundColor="quaternary" width={55} height="100%">
             <ContactInfo />
           </Area>
+          <BackgroundBubbles size={90} />
         </>
       )}
-      <BackgroundBubbles size={90} />
     </Container>
   );
 }

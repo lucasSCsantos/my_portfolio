@@ -281,3 +281,33 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
   @media (max-width: 428px) {
   }
 `;
+
+export const AnimalContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    /* opacity: 0.6 !important; */
+  }
+
+  .jellyfish1 {
+    right: 80px;
+    top: 40px;
+    /* transform: rotate(-20deg) !important; */
+  }
+  .jellyfish2 {
+    top: 300px;
+    left: 20px;
+    /* transform: rotate(30deg) !important; */
+  }
+
+  .jellyfish3 {
+    top: 600px;
+    right: 20px;
+    /* transform: rotate(-5deg) !important; */
+  }
+`;

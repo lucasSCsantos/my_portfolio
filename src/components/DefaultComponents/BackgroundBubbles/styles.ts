@@ -10,6 +10,7 @@ export const Container = styled.div<ContainerProps>`
   right: 0;
   height: 100%;
   overflow: hidden;
+  z-index: 0;
 
   .bubble {
     width: 30px;

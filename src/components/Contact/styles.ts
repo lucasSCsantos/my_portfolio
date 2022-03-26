@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  z-index: 10;
 
   & > div:first-child {
     justify-content: center;
@@ -17,6 +18,9 @@ export const Container = styled.div`
   }
 
   & > div:nth-child(2) {
+    div {
+      z-index: 10;
+    }
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -47,7 +51,7 @@ export const Container = styled.div`
       width: 100%;
       background-color: ${({ theme }) => theme.colors.transparent};
       position: absolute;
-      z-index: 3;
+      z-index: 10;
     }
     & > div:nth-child(2) {
       width: 100%;
@@ -82,8 +86,7 @@ export const IconsContainer = styled.div`
     font-size: 0;
     height: fit-content;
     color: white;
-    min-width: 80px;
-    /* background-color: red; */
+    min-width: 125px;
     svg {
       margin: 0 0.5rem;
       margin-bottom: 1.2rem;
