@@ -42,7 +42,6 @@ export default class MyDocument extends Document {
       <Html lang="pt-br">
         <Head>
           <title>Lucas Santana</title>
-
           <link rel="preconnect" href="https://fonts.gstatic.com" />
 
           <link

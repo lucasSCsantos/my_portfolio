@@ -11,6 +11,10 @@ function Bar({ width, name, limit }) {
       setScrollTop(e.target.documentElement.scrollTop);
     };
     window.addEventListener('scroll', onScroll);
+    console.log(
+      (scrollTop <= width || scrollTop <= limit) && scrollTop >= width - 970
+    );
+    console.log(scrollTop, width, limit, width - 970);
     return (scrollTop <= width || scrollTop <= limit) &&
       scrollTop >= width - 970
       ? setClassName('actual')

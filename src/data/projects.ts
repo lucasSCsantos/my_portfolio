@@ -8,6 +8,7 @@ import node from '../images/node.png';
 import express from '../images/express.png';
 import react from '../images/react.png';
 import redux from '../images/redux.png';
+import reactNative from '../images/reactNative.png';
 import styledC from '../images/styledC.png';
 import mongo from '../images/mongo.png';
 import mysql from '../images/mysql.png';
@@ -21,6 +22,9 @@ import portfolio from '../images/portfolio.png';
 import slido from '../images/slido.png';
 import recipesApp from '../images/recipesApp.png';
 import thisPortfolio from '../images/thisPortfolio.png';
+import eatFlavor from '../images/eatFlavor.png';
+import mocha from '../images/mocha.png';
+import pokedex from '../images/pokedex.jpg';
 
 export default [
   {
@@ -29,8 +33,7 @@ export default [
     name: 'Portfólio',
     image: portfolio,
     link: 'https://lucasscsantos.github.io/',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
+    description: 'Feio'
   },
   {
     id: 2,
@@ -61,19 +64,19 @@ export default [
   },
   {
     id: 5,
-    techs: [js, express, mysql, node],
-    name: 'Api de futebol',
-    image: apiSoccer,
-    link: 'https://github.com/lucasSCsantos/msc_soccer_teams',
+    techs: [reactNative, ts, styledC, redux],
+    name: 'Pokedex',
+    image: pokedex,
+    link: 'https://github.com/lucasSCsantos/pokedexApp',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   },
   {
     id: 6,
-    techs: [ts, next, styledC, react, git],
-    name: 'This portfolio',
-    image: thisPortfolio,
-    link: '',
+    techs: [ts, react, node, mongo, mocha],
+    name: 'Eat Flavor',
+    image: eatFlavor,
+    link: 'https://eatflavor-fd.herokuapp.com/',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue eros ac eros scelerisque, non consequat dolor convallis.'
   }

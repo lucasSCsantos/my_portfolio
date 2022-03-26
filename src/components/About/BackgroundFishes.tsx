@@ -6,9 +6,9 @@ import fish3 from '../../images/fish3.png';
 function BackgroundFishes() {
   return (
     <FishContainer>
-      <img src={fish1} alt="fish" className="fish1" />
-      <img src={fish2} alt="fish" className="fish2" />
-      <img src={fish3} alt="fish" className="fish3" />
+      <img src={fish1} alt="fish" className="fish1" data-aos="fade-right" />
+      <img src={fish2} alt="fish" className="fish2" data-aos="fade-left" />
+      <img src={fish3} alt="fish" className="fish3" data-aos="fade-left" />
     </FishContainer>
   );
 }

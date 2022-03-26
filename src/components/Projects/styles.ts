@@ -34,12 +34,13 @@ export const Container = styled.div`
   }
 
   & > div:nth-child(2) {
+    overflow: hidden;
     display: flex;
     padding-top: 40px;
     flex-wrap: wrap;
     background-image: linear-gradient(
-      ${({ theme }) => theme.colors.primary},
-      ${({ theme }) => theme.colors.secondary}
+      ${({ theme }) => theme.colors.secondary},
+      ${({ theme }) => theme.colors.tertiary}
     );
   }
   @media (max-width: 1440px) {
@@ -58,8 +59,8 @@ export const Container = styled.div`
       z-index: 0;
       width: 100%;
       background-image: linear-gradient(
-        ${({ theme }) => theme.colors.primary},
-        ${({ theme }) => theme.colors.secondary}
+        ${({ theme }) => theme.colors.secondary},
+        ${({ theme }) => theme.colors.tertiary}
       );
     }
   }
@@ -279,5 +280,57 @@ export const ProjectInfoContainer = styled.div<ProjectInfoProps>`
     }
   }
   @media (max-width: 428px) {
+  }
+`;
+
+export const AnimalContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    opacity: 0.6;
+  }
+
+  .jellyfish1 {
+    right: 80px;
+    top: 40px;
+    /* transform: rotate(-20deg) !important; */
+  }
+  .jellyfish2 {
+    top: 300px;
+    left: 20px;
+    /* transform: rotate(30deg) !important; */
+  }
+
+  .jellyfish3 {
+    top: 600px;
+    right: 20px;
+    /* transform: rotate(-5deg) !important; */
+  }
+
+  .whale {
+    width: 700px;
+    top: 1000px;
+    right: -150px;
+  }
+
+  .submarine {
+    width: 400px;
+    top: 1650px;
+    left: 20px;
+  }
+
+  .shark {
+    width: 400px;
+    top: 2200px;
+    left: 300px;
+  }
+
+  @media (max-width: 834px) {
+    display: none;
   }
 `;

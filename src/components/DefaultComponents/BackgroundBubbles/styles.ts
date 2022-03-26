@@ -10,6 +10,7 @@ export const Container = styled.div<ContainerProps>`
   right: 0;
   height: 100%;
   overflow: hidden;
+  z-index: 0;
 
   .bubble {
     width: 30px;
@@ -17,7 +18,7 @@ export const Container = styled.div<ContainerProps>`
     border-radius: 100%;
     position: absolute;
     background-color: white;
-    bottom: 0px;
+    bottom: -30px;
     opacity: 0.2;
     animation: bubble 15s ease-in-out infinite,
       sideWays 4s ease-in-out infinite alternate;

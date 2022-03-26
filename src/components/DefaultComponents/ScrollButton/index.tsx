@@ -11,7 +11,6 @@ function ScrollButton() {
       left: 0,
       behavior: 'smooth'
     });
-    console.log(window.innerHeight);
   };
 
   const scrollUp = () => {
@@ -20,7 +19,6 @@ function ScrollButton() {
       left: 0,
       behavior: 'smooth'
     });
-    console.log(window.innerHeight);
   };
 
   useEffect(() => {
@@ -37,9 +35,11 @@ function ScrollButton() {
           <BsChevronUp size={60} fontWeight={100} color="white" />
         </Button>
       )}
-      <Button type="button" onClick={scrollDown} direction="down">
-        <BsChevronDown size={60} fontWeight={100} color="white" />
-      </Button>
+      {scrollTop < 4600 && (
+        <Button type="button" onClick={scrollDown} direction="down">
+          <BsChevronDown size={60} fontWeight={100} color="white" />
+        </Button>
+      )}
     </Container>
   );
 }

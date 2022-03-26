@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 100%;
   left: 50px;
   width: 80px;
-  z-index: 20;
+  z-index: 100;
 
   @media (max-width: 1440px) {
   }

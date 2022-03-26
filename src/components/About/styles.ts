@@ -13,10 +13,19 @@ export const Container = styled.div`
   display: flex;
   position: relative;
 
+  & > div:nth-child(1) {
+    /* z-index: 50; */
+  }
+
   & > div:nth-child(2) {
+    overflow: hidden;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    background-image: linear-gradient(
+      ${({ theme }) => theme.colors.primary},
+      ${({ theme }) => theme.colors.secondary}
+    );
 
     h1 {
       text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -249,33 +258,7 @@ export const FishContainer = styled.div`
   @media (max-width: 1024px) {
   }
   @media (max-width: 834px) {
-    img {
-      width: 100px;
-    }
-    .fish1 {
-      top: -10%;
-    }
-    .fish2 {
-      top: -70%;
-    }
-    .fish3 {
-      top: 65%;
-    }
-  }
-  @media (max-width: 428px) {
-    img {
-      width: 70px;
-    }
-    .fish1 {
-      top: -5%;
-    }
-    .fish2 {
-      top: -55%;
-    }
-    .fish3 {
-      right: 20px;
-      top: 65%;
-    }
+    display: none;
   }
 `;
 

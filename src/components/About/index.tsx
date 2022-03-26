@@ -7,7 +7,7 @@ import { Container } from './styles';
 
 function About() {
   return (
-    <Container>
+    <Container id="sobre">
       <Area backgroundColor="transparent" width={45} height="100%">
         <AboutContent />
       </Area>

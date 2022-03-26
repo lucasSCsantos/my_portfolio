@@ -6,6 +6,7 @@ import next from '../images/next.png';
 import node from '../images/node.png';
 import express from '../images/express.png';
 import react from '../images/react.png';
+import reactNative from '../images/reactNative.png';
 import redux from '../images/redux.png';
 import styledC from '../images/styledC.png';
 import mongo from '../images/mongo.png';
@@ -14,6 +15,7 @@ import sequelize from '../images/sequelize.png';
 import github from '../images/github.png';
 import git from '../images/git.png';
 import figma from '../images/figma.png';
+import mocha from '../images/mocha.png';
 
 export const lenguages = [
   { id: 1, bg: js, name: 'JavaScript', size: 64 },
@@ -24,11 +26,11 @@ export const lenguages = [
 
 export const frameworks = [
   { id: 1, bg: node, name: 'Node', size: 56 },
-  { id: 2, bg: styledC, name: 'Styled-Components', size: 64 },
-  { id: 3, bg: next, name: 'Next', size: 48 },
-  { id: 4, bg: express, name: 'Express', size: 48 },
-  { id: 5, bg: redux, name: 'Redux', size: 56 },
-  { id: 6, bg: react, name: 'React', size: 64 }
+  { id: 2, bg: next, name: 'Next', size: 48 },
+  { id: 3, bg: express, name: 'Express', size: 48 },
+  { id: 4, bg: redux, name: 'Redux', size: 56 },
+  { id: 5, bg: react, name: 'React', size: 64 },
+  { id: 6, bg: reactNative, name: 'React Native', size: 48 }
 ];
 
 export const databases = [
@@ -40,5 +42,7 @@ export const databases = [
 export const others = [
   { id: 1, bg: github, name: 'GitHub', size: 56 },
   { id: 2, bg: git, name: 'Git', size: 48 },
-  { id: 3, bg: figma, name: 'Figma', size: 64 }
+  { id: 3, bg: figma, name: 'Figma', size: 64 },
+  { id: 4, bg: styledC, name: 'Styled-Components', size: 64 },
+  { id: 5, bg: mocha, name: 'Mocha', size: 64 }
 ];
