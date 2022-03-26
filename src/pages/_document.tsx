@@ -41,6 +41,20 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          <title>Home | Lucas Santana</title>
+          <meta
+            name="description"
+            content="Sou um desenvolvedor web Full-Stack, aqui você encontra alguns projetos desenvolvidos por mim durante meu trabalho e estudo."
+          />
+          <meta
+            property="og:description"
+            content="Sou um desenvolvedor web Full-Stack, aqui você encontra alguns projetos desenvolvidos por mim durante meu trabalho e estudo."
+          />
+          <meta property="og:image" content="/frame.png" />
+          <meta property="og:image:secure_url" content="/frame.png" />
+          <meta property="twitter:image" content="/frame.png" />
+          <meta property="twitter:image:src" content="/frame.png" />
+
           <link rel="preconnect" href="https://fonts.gstatic.com" />
 
           <link
@@ -48,7 +62,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="ico" href="https://rocketseat.com.br/favicon.ico" />
+          <link rel="icon" href="/icon.png" />
 
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
