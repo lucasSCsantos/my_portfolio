@@ -1,5 +1,5 @@
 import { IoCallSharp } from 'react-icons/io5';
-import { SiGithub, SiGmail, SiLinkedin, SiWhatsapp } from 'react-icons/si';
+import { SiGmail, SiWhatsapp } from 'react-icons/si';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import { Heading, Text } from '../DefaultComponents';
 import { IconsContainer, MobileContactInfo, MobileContainer } from './styles';
@@ -25,8 +25,6 @@ function MobileContact() {
           <SiWhatsapp size={iconSize} />
           <IoCallSharp size={iconSize} />
           <br />
-          <SiLinkedin size={iconSize} />
-          <SiGithub size={iconSize} />
         </IconsContainer>
         <div>
           <Text size="large" color="textLight">
