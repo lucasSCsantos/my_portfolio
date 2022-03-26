@@ -11,7 +11,6 @@ function ScrollButton() {
       left: 0,
       behavior: 'smooth'
     });
-    console.log(window.innerHeight);
   };
 
   const scrollUp = () => {

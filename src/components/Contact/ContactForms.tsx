@@ -1,4 +1,4 @@
-import { SiGithub, SiGmail, SiLinkedin, SiWhatsapp } from 'react-icons/si';
+import { SiGmail, SiWhatsapp } from 'react-icons/si';
 import { IoCallSharp } from 'react-icons/io5';
 import { Heading } from '../DefaultComponents';
 import { ContactFormsContainer, IconsContainer } from './styles';
@@ -14,9 +14,6 @@ function ContactForms() {
         <br />
         <SiWhatsapp />
         <IoCallSharp />
-        <br />
-        <SiLinkedin />
-        <SiGithub />
       </IconsContainer>
     </ContactFormsContainer>
   );

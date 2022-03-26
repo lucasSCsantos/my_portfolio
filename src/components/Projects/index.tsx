@@ -7,7 +7,7 @@ import { Container } from './styles';
 
 function Projects({ arr }) {
   return (
-    <Container>
+    <Container id="projetos">
       <Area backgroundColor="transparent" width={45} height="100%">
         {arr.map(({ description, name, id }) => (
           <ProjectInfo description={description} id={id} key={id} name={name} />

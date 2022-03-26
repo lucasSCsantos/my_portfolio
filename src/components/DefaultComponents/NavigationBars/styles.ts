@@ -7,7 +7,7 @@ export const Container = styled.div`
   bottom: 50%;
   width: 6.25rem;
   height: 6.25rem;
-  z-index: 21;
+  z-index: 101;
   .actual {
     width: 6.25rem;
     background-color: ${({ theme }) => theme.colors.navHighlight};

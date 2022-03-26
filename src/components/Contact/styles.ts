@@ -108,6 +108,36 @@ export const ContactInfoContainer = styled.div`
   h1 {
     margin-bottom: -0.5rem;
   }
+  @media (max-width: 1440px) {
+    h1 {
+      margin-top: 35px;
+    }
+    & > p:nth-child(2) {
+      margin-left: 2px;
+      font-size: 2.2rem;
+      margin-top: 0px;
+    }
+    & > p:nth-child(3) {
+      margin-left: 2px;
+      font-size: 2.2rem;
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 1024px) {
+    h1 {
+      margin-top: 70px;
+    }
+    & > p:nth-child(2) {
+      margin-left: 2px;
+      font-size: 2rem;
+      margin-top: 15px;
+    }
+    & > p:nth-child(3) {
+      margin-left: 2px;
+      font-size: 2rem;
+      margin-top: 25px;
+    }
+  }
 `;
 
 export const MobileContainer = styled.div`
@@ -137,12 +167,86 @@ export const MobileContactInfo = styled.div`
     text-align: left;
     margin-bottom: 10px;
     margin-left: 20px;
+    z-index: 10;
+  }
+  @media (max-width: 834px) {
+    div p {
+      margin-left: 2px;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      z-index: 10;
+      font-size: 1.6rem;
+    }
   }
   @media (max-width: 428px) {
     div p {
       margin-left: 2px;
       margin-bottom: 12px;
+      margin-top: 0;
+      z-index: 10;
       font-size: 1rem;
+    }
+  }
+`;
+
+export const PlantsContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: red; */
+  overflow: hidden;
+
+  img {
+    height: auto;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 3;
+  }
+
+  .plant1 {
+    width: 300px;
+    bottom: -80px;
+    left: -50px;
+  }
+
+  .plant2 {
+    width: 500px;
+    bottom: -130px;
+    left: 300px;
+    transform: rotate(-40deg);
+    transform: scaleX(-1);
+  }
+
+  .plant3 {
+    width: 350px;
+    right: -100px;
+    bottom: 200px;
+    transform: rotate(-50deg);
+  }
+
+  .anchor {
+    width: 700px;
+    opacity: 0.3;
+    z-index: 2;
+    bottom: 0;
+    right: -220px;
+  }
+
+  @media (max-width: 834px) {
+    img {
+      z-index: -1;
+    }
+
+    .plant2 {
+      width: 400px;
+      bottom: -80px;
+      left: 210px;
+      transform: rotate(-40deg);
+      transform: scaleX(-1);
+    }
+
+    .anchor {
+      z-index: -2;
     }
   }
 `;

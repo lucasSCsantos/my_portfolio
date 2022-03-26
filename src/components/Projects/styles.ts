@@ -34,6 +34,7 @@ export const Container = styled.div`
   }
 
   & > div:nth-child(2) {
+    overflow: hidden;
     display: flex;
     padding-top: 40px;
     flex-wrap: wrap;
@@ -291,7 +292,7 @@ export const AnimalContainer = styled.div`
     width: 200px;
     height: auto;
     position: absolute;
-    /* opacity: 0.6 !important; */
+    opacity: 0.6;
   }
 
   .jellyfish1 {
@@ -309,5 +310,27 @@ export const AnimalContainer = styled.div`
     top: 600px;
     right: 20px;
     /* transform: rotate(-5deg) !important; */
+  }
+
+  .whale {
+    width: 700px;
+    top: 1000px;
+    right: -150px;
+  }
+
+  .submarine {
+    width: 400px;
+    top: 1650px;
+    left: 20px;
+  }
+
+  .shark {
+    width: 400px;
+    top: 2200px;
+    left: 300px;
+  }
+
+  @media (max-width: 834px) {
+    display: none;
   }
 `;
