@@ -8,8 +8,8 @@ function AboutContent() {
         SOBRE MIM
       </Heading>
       <Text size="xsmall" color="text">
-        Sou baiano de Salvador, tenho 20 anos e há dois anos me dedico ao estudo
-        de desenvolvimento de software. Atualmente atuo como desenvolvedor
+        Sou baiano de Salvador, tenho 22 anos e há 4 anos me dedico ao estudo de
+        desenvolvimento de software. Atualmente atuo como desenvolvedor
         full-stack, mas no front-end é onde mais gosto de trabalhar. Entre
         minhas maiores conquistas na área eu me orgulho de um projeto voluntário
         da comunidade de e-sport que atualmente conta com mais de 25 mil
